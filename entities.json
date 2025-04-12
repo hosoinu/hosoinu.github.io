@@ -1,0 +1,583 @@
+[
+  {
+    "type": 1,
+    "name": "Dropped Item",
+    "text_type": "item",
+    "icon": "icons/1.png",
+    "description": "A physical item dropped in the world. Can be collected by players."
+  },
+  {
+    "type": 2,
+    "name": "Experience Orb",
+    "text_type": "xp_orb",
+    "icon": "icons/2.png",
+    "description": "Glowing spheres that provide XP for enchanting and repairs."
+  },
+  {
+    "type": 3,
+    "name": "Area Effect Cloud",
+    "text_type": "area_effect_cloud",
+    "icon": "icons/3.png",
+    "description": "Lingering potion effect zone that damages entities."
+  },
+  {
+    "type": 4,
+    "name": "Elder Guardian",
+    "text_type": "elder_guardian",
+    "icon": "icons/4.png",
+    "description": "Boss guardian in ocean monuments. Causes Mining Fatigue."
+  },
+  {
+    "type": 5,
+    "name": "Wither Skeleton",
+    "text_type": "wither_skeleton",
+    "icon": "icons/5.png",
+    "description": "Nether skeleton with stone swords. Drops coal and skulls."
+  },
+  {
+    "type": 6,
+    "name": "Stray",
+    "text_type": "stray",
+    "icon": "icons/6.png",
+    "description": "Icy skeleton that shoots Slowness arrows."
+  },
+  {
+    "type": 7,
+    "name": "Egg",
+    "text_type": "egg",
+    "icon": "icons/7.png",
+    "description": "Throwable chicken egg with small spawn chance."
+  },
+  {
+    "type": 8,
+    "name": "Lead Knot",
+    "text_type": "leash_knot",
+    "icon": "icons/8.png",
+    "description": "Leash attachment point on fences for animals."
+  },
+  {
+    "type": 9,
+    "name": "Painting",
+    "text_type": "painting",
+    "icon": "icons/9.png",
+    "description": "Decorative wall art with random sizes/themes."
+  },
+  {
+    "type": 10,
+    "name": "Arrow",
+    "text_type": "arrow",
+    "icon": "icons/10.png",
+    "description": "Standard projectile from bows."
+  },
+  {
+    "type": 11,
+    "name": "Snowball",
+    "text_type": "snowball",
+    "icon": "icons/11.png",
+    "description": "Throwable projectile that knocks back entities."
+  },
+  {
+    "type": 12,
+    "name": "Ghast Fireball",
+    "text_type": "fireball",
+    "icon": "icons/12.png",
+    "description": "Explosive projectile fired by Ghasts."
+  },
+  {
+    "type": 13,
+    "name": "Blaze Fireball",
+    "text_type": "small_fireball",
+    "icon": "icons/13.png",
+    "description": "Fire projectile from Blazes in Nether fortresses."
+  },
+  {
+    "type": 14,
+    "name": "Ender Pearl",
+    "text_type": "ender_pearl",
+    "icon": "icons/14.png",
+    "description": "Throwable teleportation item with ender particles."
+  },
+  {
+    "type": 15,
+    "name": "Eye of Ender",
+    "text_type": "eye_of_ender_signal",
+    "icon": "icons/15.png",
+    "description": "Navigation item that locates End portals."
+  },
+  {
+    "type": 16,
+    "name": "Splash Potion",
+    "text_type": "potion",
+    "icon": "icons/16.png",
+    "description": "Throwable potion with area-of-effect."
+  },
+  {
+    "type": 17,
+    "name": "Bottle o' Enchanting",
+    "text_type": "xp_bottle",
+    "icon": "icons/17.png",
+    "description": "Throwable XP container from trading."
+  },
+  {
+    "type": 18,
+    "name": "Item Frame",
+    "text_type": "item_frame",
+    "icon": "icons/18.png",
+    "description": "Wall-mounted display for items/maps."
+  },
+  {
+    "type": 19,
+    "name": "Wither Skull",
+    "text_type": "wither_skull",
+    "icon": "icons/19.png",
+    "description": "Projectile fired by the Wither boss."
+  },
+  {
+    "type": 20,
+    "name": "Primed TNT",
+    "text_type": "tnt",
+    "icon": "icons/20.png",
+    "description": "Explosive block with fuse timer."
+  },
+  {
+    "type": 21,
+    "name": "Falling Block",
+    "text_type": "falling_block",
+    "icon": "icons/21.png",
+    "description": "Gravity-affected block like sand or gravel."
+  },
+  {
+    "type": 22,
+    "name": "Firework Rocket",
+    "text_type": "fireworks_rocket",
+    "icon": "icons/22.png",
+    "description": "Launchable fireworks for visuals/elytra boosting."
+  },
+  {
+    "type": 23,
+    "name": "Husk",
+    "text_type": "husk",
+    "icon": "icons/23.png",
+    "description": "Desert zombie causing Hunger effect."
+  },
+  {
+    "type": 24,
+    "name": "Spectral Arrow",
+    "text_type": "spectral_arrow",
+    "icon": "icons/24.png",
+    "description": "Arrow that creates glowing target outline."
+  },
+  {
+    "type": 25,
+    "name": "Shulker Bullet",
+    "text_type": "shulker_bullet",
+    "icon": "icons/25.png",
+    "description": "Homing projectile from Shulkers in End cities."
+  },
+  {
+    "type": 26,
+    "name": "Dragon Fireball",
+    "text_type": "dragon_fireball",
+    "icon": "icons/26.png",
+    "description": "Ender Dragon's explosive purple fireball."
+  },
+  {
+    "type": 27,
+    "name": "Zombie Villager",
+    "text_type": "zombie_villager",
+    "icon": "icons/27.png",
+    "description": "Curable zombie variant of villagers."
+  },
+  {
+    "type": 28,
+    "name": "Skeleton Horse",
+    "text_type": "skeleton_horse",
+    "icon": "icons/28.png",
+    "description": "Undead horse spawned during thunderstorms."
+  },
+  {
+    "type": 29,
+    "name": "Zombie Horse",
+    "text_type": "zombie_horse",
+    "icon": "icons/29.png",
+    "description": "Unridable undead horse variant."
+  },
+  {
+    "type": 30,
+    "name": "Armor Stand",
+    "text_type": "armor_stand",
+    "icon": "icons/30.png",
+    "description": "Customizable mannequin for displaying gear."
+  },
+  {
+    "type": 31,
+    "name": "Donkey",
+    "text_type": "donkey",
+    "icon": "icons/31.png",
+    "description": "Rideable mob with chest storage capacity."
+  },
+  {
+    "type": 32,
+    "name": "Mule",
+    "text_type": "mule",
+    "icon": "icons/32.png",
+    "description": "Donkey-horse hybrid with storage capacity."
+  },
+  {
+    "type": 33,
+    "name": "Evocation Fangs",
+    "text_type": "evocation_fangs",
+    "icon": "icons/33.png",
+    "description": "Attack summoned by Evokers in woodland mansions."
+  },
+  {
+    "type": 34,
+    "name": "Evoker",
+    "text_type": "evocation_illager",
+    "icon": "icons/34.png",
+    "description": "Spell-casting illager that summons fangs and vexes."
+  },
+  {
+    "type": 35,
+    "name": "Vex",
+    "text_type": "vex",
+    "icon": "icons/35.png",
+    "description": "Ghostly minion summoned by Evokers."
+  },
+  {
+    "type": 36,
+    "name": "Vindicator",
+    "text_type": "vindication_illager",
+    "icon": "icons/36.png",
+    "description": "Axe-wielding illager from woodland mansions."
+  },
+  {
+    "type": 37,
+    "name": "Illusioner",
+    "text_type": "illusion_illager",
+    "icon": "icons/37.png",
+    "description": "Unused illager mob with invisibility spells."
+  },
+  {
+    "type": 40,
+    "name": "Minecart with Command Block",
+    "text_type": "commandblock_minecart",
+    "icon": "icons/40.png",
+    "description": "Minecart with command block functionality."
+  },
+  {
+    "type": 41,
+    "name": "Boat",
+    "text_type": "boat",
+    "icon": "icons/41.png",
+    "description": "Wooden water vehicle for quick travel."
+  },
+  {
+    "type": 42,
+    "name": "Minecart",
+    "text_type": "minecart",
+    "icon": "icons/42.png",
+    "description": "Basic rail vehicle for transportation."
+  },
+  {
+    "type": 43,
+    "name": "Storage Minecart",
+    "text_type": "chest_minecart",
+    "icon": "icons/43.png",
+    "description": "Minecart with 27-slot storage capacity."
+  },
+  {
+    "type": 44,
+    "name": "Powered Minecart",
+    "text_type": "furnace_minecart",
+    "icon": "icons/44.png",
+    "description": "Minecart powered by furnace engine."
+  },
+  {
+    "type": 45,
+    "name": "Minecart with TNT",
+    "text_type": "tnt_minecart",
+    "icon": "icons/45.png",
+    "description": "Explosive minecart activated by rails."
+  },
+  {
+    "type": 46,
+    "name": "Minecart with Hopper",
+    "text_type": "hopper_minecart",
+    "icon": "icons/46.png",
+    "description": "Minecart that collects items through hoppers."
+  },
+  {
+    "type": 47,
+    "name": "Minecart with Spawner",
+    "text_type": "spawner_minecart",
+    "icon": "icons/47.png",
+    "description": "Minecart containing mob spawner."
+  },
+  {
+    "type": 50,
+    "name": "Creeper",
+    "text_type": "creeper",
+    "icon": "icons/50.png",
+    "description": "Explosive green mob with silent approach."
+  },
+  {
+    "type": 51,
+    "name": "Skeleton",
+    "text_type": "skeleton",
+    "icon": "icons/51.png",
+    "description": "Bow-wielding undead mob vulnerable to sunlight."
+  },
+  {
+    "type": 52,
+    "name": "Spider",
+    "text_type": "spider",
+    "icon": "icons/52.png",
+    "description": "Hostile cave-dwelling arachnid."
+  },
+  {
+    "type": 53,
+    "name": "Giant Zombie",
+    "text_type": "giant",
+    "icon": "icons/53.png",
+    "description": "Unused oversized zombie variant."
+  },
+  {
+    "type": 54,
+    "name": "Zombie",
+    "text_type": "zombie",
+    "icon": "icons/54.png",
+    "description": "Common undead mob that burns in sunlight."
+  },
+  {
+    "type": 55,
+    "name": "Slime",
+    "text_type": "slime",
+    "icon": "icons/55.png",
+    "description": "Bouncy green mob that splits when killed."
+  },
+  {
+    "type": 56,
+    "name": "Ghast",
+    "text_type": "ghast",
+    "icon": "icons/56.png",
+    "description": "Floating Nether mob that shoots fireballs."
+  },
+  {
+    "type": 57,
+    "name": "Zombie Pigman",
+    "text_type": "zombie_pigman",
+    "icon": "icons/57.png",
+    "description": "Neutral Nether mob (legacy name)."
+  },
+  {
+    "type": 58,
+    "name": "Enderman",
+    "text_type": "enderman",
+    "icon": "icons/58.png",
+    "description": "Tall neutral mob that teleports and carries blocks."
+  },
+  {
+    "type": 59,
+    "name": "Cave Spider",
+    "text_type": "cave_spider",
+    "icon": "icons/59.png",
+    "description": "Poisonous spider variant found in mineshafts."
+  },
+  {
+    "type": 60,
+    "name": "Silverfish",
+    "text_type": "silverfish",
+    "icon": "icons/60.png",
+    "description": "Small mob hiding in monster eggs within stone."
+  },
+  {
+    "type": 61,
+    "name": "Blaze",
+    "text_type": "blaze",
+    "icon": "icons/61.png",
+    "description": "Nether fortress mob that shoots fire charges."
+  },
+  {
+    "type": 62,
+    "name": "Magma Cube",
+    "text_type": "magma_cube",
+    "icon": "icons/62.png",
+    "description": "Nether lava slime that splits when defeated."
+  },
+  {
+    "type": 63,
+    "name": "Ender Dragon",
+    "text_type": "ender_dragon",
+    "icon": "icons/63.png",
+    "description": "Final boss mob of Minecraft in the End dimension."
+  },
+  {
+    "type": 64,
+    "name": "Wither",
+    "text_type": "wither",
+    "icon": "icons/64.png",
+    "description": "Flying three-headed boss that destroys blocks."
+  },
+  {
+    "type": 65,
+    "name": "Bat",
+    "text_type": "bat",
+    "icon": "icons/65.png",
+    "description": "Passive cave-dwelling ambient mob."
+  },
+  {
+    "type": 66,
+    "name": "Witch",
+    "text_type": "witch",
+    "icon": "icons/66.png",
+    "description": "Swamp-dwelling mob that throws harmful potions."
+  },
+  {
+    "type": 67,
+    "name": "Endermite",
+    "text_type": "endermite",
+    "icon": "icons/67.png",
+    "description": "Small End dimension pest hated by Endermen."
+  },
+  {
+    "type": 68,
+    "name": "Guardian",
+    "text_type": "guardian",
+    "icon": "icons/68.png",
+    "description": "Underwater mob that shoots laser beams."
+  },
+  {
+    "type": 69,
+    "name": "Shulker",
+    "text_type": "shulker",
+    "icon": "icons/69.png",
+    "description": "End city mob that shoots levitation projectiles."
+  },
+  {
+    "type": 90,
+    "name": "Pig",
+    "text_type": "pig",
+    "icon": "icons/90.png",
+    "description": "Rideable passive mob attracted to carrots."
+  },
+  {
+    "type": 91,
+    "name": "Sheep",
+    "text_type": "sheep",
+    "icon": "icons/91.png",
+    "description": "Wool-producing mob that can be dyed."
+  },
+  {
+    "type": 92,
+    "name": "Cow",
+    "text_type": "cow",
+    "icon": "icons/92.png",
+    "description": "Source of leather and milk. Drops beef."
+  },
+  {
+    "type": 93,
+    "name": "Chicken",
+    "text_type": "chicken",
+    "icon": "icons/93.png",
+    "description": "Egg-laying bird that drops feathers and chicken."
+  },
+  {
+    "type": 94,
+    "name": "Squid",
+    "text_type": "squid",
+    "icon": "icons/94.png",
+    "description": "Underwater mob that emits ink when attacked."
+  },
+  {
+    "type": 95,
+    "name": "Wolf",
+    "text_type": "wolf",
+    "icon": "icons/95.png",
+    "description": "Tamable mob that attacks skeletons and can be bred."
+  },
+  {
+    "type": 96,
+    "name": "Mooshroom",
+    "text_type": "mooshroom",
+    "icon": "icons/96.png",
+    "description": "Mushroom-covered cow variant from mushroom biomes."
+  },
+  {
+    "type": 97,
+    "name": "Snow Golem",
+    "text_type": "snowman",
+    "icon": "icons/97.png",
+    "description": "Utility mob that throws snowballs at enemies."
+  },
+  {
+    "type": 98,
+    "name": "Ocelot",
+    "text_type": "ocelot",
+    "icon": "icons/98.png",
+    "description": "Shy jungle cat that can trust players."
+  },
+    {
+    "type": 99,
+    "name": "Iron Golem",
+    "text_type": "villager_golem",
+    "icon": "icons/99.png",
+    "description": "Protective mob that defends villagers. Drops iron ingots and poppies."
+  },
+  {
+    "type": 100,
+    "name": "Horse",
+    "text_type": "horse",
+    "icon": "icons/100.png",
+    "description": "Rideable mob with variable speeds. Can wear armor and be bred."
+  },
+  {
+    "type": 101,
+    "name": "Rabbit",
+    "text_type": "rabbit",
+    "icon": "icons/101.png",
+    "description": "Small passive mob found in deserts/plains. Drops rabbit hide and feet."
+  },
+  {
+    "type": 102,
+    "name": "Polar Bear",
+    "text_type": "polar_bear",
+    "icon": "icons/102.png",
+    "description": "Neutral icy biome mob. Attacks if cubs are nearby."
+  },
+  {
+    "type": 103,
+    "name": "Llama",
+    "text_type": "llama",
+    "icon": "icons/103.png",
+    "description": "Caravan mob that can be equipped with carpets. Spits when angered."
+  },
+  {
+    "type": 104,
+    "name": "Llama Spit",
+    "text_type": "llama_spit",
+    "icon": "icons/104.png",
+    "description": "Projectile attack from llamas. Causes minor damage."
+  },
+  {
+    "type": 105,
+    "name": "Parrot",
+    "text_type": "parrot",
+    "icon": "icons/105.png",
+    "description": "Colorful tamable bird that mimics mob sounds and dances to music."
+  },
+  {
+    "type": 120,
+    "name": "Villager",
+    "text_type": "villager",
+    "icon": "icons/120.png",
+    "description": "Trading NPC with professions like farmer, librarian, or blacksmith."
+  },
+  {
+    "type": 200,
+    "name": "Ender Crystal",
+    "text_type": "ender_crystal",
+    "icon": "icons/200.png",
+    "description": "Floating crystal in the End that heals the Ender Dragon."
+  }
+]
