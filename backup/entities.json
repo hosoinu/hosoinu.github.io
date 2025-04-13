@@ -3,582 +3,581 @@
     "type": 1,
     "name": "Dropped Item",
     "text_type": "item",
-    "icon": "https://hosoinu.github.io/icons/1.png",
+    "icon": "icons/1.png",
     "description": "A physical item dropped in the world. Can be collected by players."
   },
   {
     "type": 2,
     "name": "Experience Orb",
     "text_type": "xp_orb",
-    "icon": "https://hosoinu.github.io/icons/2.png",
+    "icon": "icons/2.png",
     "description": "Glowing spheres that provide XP for enchanting and repairs."
   },
   {
     "type": 3,
     "name": "Area Effect Cloud",
     "text_type": "area_effect_cloud",
-    "icon": "https://hosoinu.github.io/icons/3.png",
+    "icon": "icons/3.png",
     "description": "Lingering potion effect zone that damages entities."
   },
   {
     "type": 4,
     "name": "Elder Guardian",
     "text_type": "elder_guardian",
-    "icon": "https://hosoinu.github.io/icons/4.png",
+    "icon": "icons/4.png",
     "description": "Boss guardian in ocean monuments. Causes Mining Fatigue."
   },
   {
     "type": 5,
     "name": "Wither Skeleton",
     "text_type": "wither_skeleton",
-    "icon": "https://hosoinu.github.io/icons/5.png",
+    "icon": "icons/5.png",
     "description": "Nether skeleton with stone swords. Drops coal and skulls."
   },
   {
     "type": 6,
     "name": "Stray",
     "text_type": "stray",
-    "icon": "https://hosoinu.github.io/icons/6.png",
+    "icon": "icons/6.png",
     "description": "Icy skeleton that shoots Slowness arrows."
   },
   {
     "type": 7,
     "name": "Egg",
     "text_type": "egg",
-    "icon": "https://hosoinu.github.io/icons/7.png",
+    "icon": "icons/7.png",
     "description": "Throwable chicken egg with small spawn chance."
   },
   {
     "type": 8,
     "name": "Lead Knot",
     "text_type": "leash_knot",
-    "icon": "https://hosoinu.github.io/icons/8.png",
+    "icon": "icons/8.png",
     "description": "Leash attachment point on fences for animals."
   },
   {
     "type": 9,
     "name": "Painting",
     "text_type": "painting",
-    "icon": "https://hosoinu.github.io/icons/9.png",
+    "icon": "icons/9.png",
     "description": "Decorative wall art with random sizes/themes."
   },
   {
     "type": 10,
     "name": "Arrow",
     "text_type": "arrow",
-    "icon": "https://hosoinu.github.io/icons/10.png",
+    "icon": "icons/10.png",
     "description": "Standard projectile from bows."
   },
   {
     "type": 11,
     "name": "Snowball",
     "text_type": "snowball",
-    "icon": "https://hosoinu.github.io/icons/11.png",
+    "icon": "icons/11.png",
     "description": "Throwable projectile that knocks back entities."
   },
   {
     "type": 12,
     "name": "Ghast Fireball",
     "text_type": "fireball",
-    "icon": "https://hosoinu.github.io/icons/12.png",
+    "icon": "icons/12.png",
     "description": "Explosive projectile fired by Ghasts."
   },
   {
     "type": 13,
     "name": "Blaze Fireball",
     "text_type": "small_fireball",
-    "icon": "https://hosoinu.github.io/icons/13.png",
+    "icon": "icons/13.png",
     "description": "Fire projectile from Blazes in Nether fortresses."
   },
   {
     "type": 14,
     "name": "Ender Pearl",
     "text_type": "ender_pearl",
-    "icon": "https://hosoinu.github.io/icons/14.png",
+    "icon": "icons/14.png",
     "description": "Throwable teleportation item with ender particles."
   },
   {
     "type": 15,
     "name": "Eye of Ender",
     "text_type": "eye_of_ender_signal",
-    "icon": "https://hosoinu.github.io/icons/15.png",
+    "icon": "icons/15.png",
     "description": "Navigation item that locates End portals."
   },
   {
     "type": 16,
     "name": "Splash Potion",
     "text_type": "potion",
-    "icon": "https://hosoinu.github.io/icons/16.png",
+    "icon": "icons/16.png",
     "description": "Throwable potion with area-of-effect."
   },
   {
     "type": 17,
     "name": "Bottle o' Enchanting",
     "text_type": "xp_bottle",
-    "icon": "https://hosoinu.github.io/icons/17.png",
+    "icon": "icons/17.png",
     "description": "Throwable XP container from trading."
   },
   {
     "type": 18,
     "name": "Item Frame",
     "text_type": "item_frame",
-    "icon": "https://hosoinu.github.io/icons/18.png",
+    "icon": "icons/18.png",
     "description": "Wall-mounted display for items/maps."
   },
   {
     "type": 19,
     "name": "Wither Skull",
     "text_type": "wither_skull",
-    "icon": "https://hosoinu.github.io/icons/19.png",
+    "icon": "icons/19.png",
     "description": "Projectile fired by the Wither boss."
   },
   {
     "type": 20,
     "name": "Primed TNT",
     "text_type": "tnt",
-    "icon": "https://hosoinu.github.io/icons/20.png",
+    "icon": "icons/20.png",
     "description": "Explosive block with fuse timer."
   },
   {
     "type": 21,
     "name": "Falling Block",
     "text_type": "falling_block",
-    "icon": "https://hosoinu.github.io/icons/21.png",
+    "icon": "icons/21.png",
     "description": "Gravity-affected block like sand or gravel."
   },
   {
     "type": 22,
     "name": "Firework Rocket",
     "text_type": "fireworks_rocket",
-    "icon": "https://hosoinu.github.io/icons/22.png",
+    "icon": "icons/22.png",
     "description": "Launchable fireworks for visuals/elytra boosting."
   },
   {
     "type": 23,
     "name": "Husk",
     "text_type": "husk",
-    "icon": "https://hosoinu.github.io/icons/23.png",
+    "icon": "icons/23.png",
     "description": "Desert zombie causing Hunger effect."
   },
   {
     "type": 24,
     "name": "Spectral Arrow",
     "text_type": "spectral_arrow",
-    "icon": "https://hosoinu.github.io/icons/24.png",
+    "icon": "icons/24.png",
     "description": "Arrow that creates glowing target outline."
   },
   {
     "type": 25,
     "name": "Shulker Bullet",
     "text_type": "shulker_bullet",
-    "icon": "https://hosoinu.github.io/icons/25.png",
+    "icon": "icons/25.png",
     "description": "Homing projectile from Shulkers in End cities."
   },
   {
     "type": 26,
     "name": "Dragon Fireball",
     "text_type": "dragon_fireball",
-    "icon": "https://hosoinu.github.io/icons/26.png",
+    "icon": "icons/26.png",
     "description": "Ender Dragon's explosive purple fireball."
   },
   {
     "type": 27,
     "name": "Zombie Villager",
     "text_type": "zombie_villager",
-    "icon": "https://hosoinu.github.io/icons/27.png",
+    "icon": "icons/27.png",
     "description": "Curable zombie variant of villagers."
   },
   {
     "type": 28,
     "name": "Skeleton Horse",
     "text_type": "skeleton_horse",
-    "icon": "https://hosoinu.github.io/icons/28.png",
+    "icon": "icons/28.png",
     "description": "Undead horse spawned during thunderstorms."
   },
   {
     "type": 29,
     "name": "Zombie Horse",
     "text_type": "zombie_horse",
-    "icon": "https://hosoinu.github.io/icons/29.png",
+    "icon": "icons/29.png",
     "description": "Unridable undead horse variant."
   },
   {
     "type": 30,
     "name": "Armor Stand",
     "text_type": "armor_stand",
-    "icon": "https://hosoinu.github.io/icons/30.png",
+    "icon": "icons/30.png",
     "description": "Customizable mannequin for displaying gear."
   },
   {
     "type": 31,
     "name": "Donkey",
     "text_type": "donkey",
-    "icon": "https://hosoinu.github.io/icons/31.png",
+    "icon": "icons/31.png",
     "description": "Rideable mob with chest storage capacity."
   },
   {
     "type": 32,
     "name": "Mule",
     "text_type": "mule",
-    "icon": "https://hosoinu.github.io/icons/32.png",
+    "icon": "icons/32.png",
     "description": "Donkey-horse hybrid with storage capacity."
   },
   {
     "type": 33,
     "name": "Evocation Fangs",
     "text_type": "evocation_fangs",
-    "icon": "https://hosoinu.github.io/icons/33.png",
+    "icon": "icons/33.png",
     "description": "Attack summoned by Evokers in woodland mansions."
   },
   {
     "type": 34,
     "name": "Evoker",
     "text_type": "evocation_illager",
-    "icon": "https://hosoinu.github.io/icons/34.png",
+    "icon": "icons/34.png",
     "description": "Spell-casting illager that summons fangs and vexes."
   },
   {
     "type": 35,
     "name": "Vex",
     "text_type": "vex",
-    "icon": "https://hosoinu.github.io/icons/35.png",
+    "icon": "icons/35.png",
     "description": "Ghostly minion summoned by Evokers."
   },
   {
     "type": 36,
     "name": "Vindicator",
     "text_type": "vindication_illager",
-    "icon": "https://hosoinu.github.io/icons/36.png",
+    "icon": "icons/36.png",
     "description": "Axe-wielding illager from woodland mansions."
   },
   {
     "type": 37,
     "name": "Illusioner",
     "text_type": "illusion_illager",
-    "icon": "https://hosoinu.github.io/icons/37.png",
+    "icon": "icons/37.png",
     "description": "Unused illager mob with invisibility spells."
   },
   {
     "type": 40,
     "name": "Minecart with Command Block",
     "text_type": "commandblock_minecart",
-    "icon": "https://hosoinu.github.io/icons/40.png",
+    "icon": "icons/40.png",
     "description": "Minecart with command block functionality."
   },
   {
     "type": 41,
     "name": "Boat",
     "text_type": "boat",
-    "icon": "https://hosoinu.github.io/icons/41.png",
+    "icon": "icons/41.png",
     "description": "Wooden water vehicle for quick travel."
   },
   {
     "type": 42,
     "name": "Minecart",
     "text_type": "minecart",
-    "icon": "https://hosoinu.github.io/icons/42.png",
+    "icon": "icons/42.png",
     "description": "Basic rail vehicle for transportation."
   },
   {
     "type": 43,
     "name": "Storage Minecart",
     "text_type": "chest_minecart",
-    "icon": "https://hosoinu.github.io/icons/43.png",
+    "icon": "icons/43.png",
     "description": "Minecart with 27-slot storage capacity."
   },
   {
     "type": 44,
     "name": "Powered Minecart",
     "text_type": "furnace_minecart",
-    "icon": "https://hosoinu.github.io/icons/44.png",
+    "icon": "icons/44.png",
     "description": "Minecart powered by furnace engine."
   },
   {
     "type": 45,
     "name": "Minecart with TNT",
     "text_type": "tnt_minecart",
-    "icon": "https://hosoinu.github.io/icons/45.png",
+    "icon": "icons/45.png",
     "description": "Explosive minecart activated by rails."
   },
   {
     "type": 46,
     "name": "Minecart with Hopper",
     "text_type": "hopper_minecart",
-    "icon": "https://hosoinu.github.io/icons/46.png",
+    "icon": "icons/46.png",
     "description": "Minecart that collects items through hoppers."
   },
   {
     "type": 47,
     "name": "Minecart with Spawner",
     "text_type": "spawner_minecart",
-    "icon": "https://hosoinu.github.io/icons/47.png",
+    "icon": "icons/47.png",
     "description": "Minecart containing mob spawner."
   },
   {
     "type": 50,
     "name": "Creeper",
     "text_type": "creeper",
-    "icon": "https://hosoinu.github.io/icons/50.png",
+    "icon": "icons/50.png",
     "description": "Explosive green mob with silent approach."
   },
   {
     "type": 51,
     "name": "Skeleton",
     "text_type": "skeleton",
-    "icon": "https://hosoinu.github.io/icons/51.png",
+    "icon": "icons/51.png",
     "description": "Bow-wielding undead mob vulnerable to sunlight."
   },
   {
     "type": 52,
     "name": "Spider",
     "text_type": "spider",
-    "icon": "https://hosoinu.github.io/icons/52.png",
+    "icon": "icons/52.png",
     "description": "Hostile cave-dwelling arachnid."
   },
   {
     "type": 53,
     "name": "Giant Zombie",
     "text_type": "giant",
-    "icon": "https://hosoinu.github.io/icons/53.png",
+    "icon": "icons/53.png",
     "description": "Unused oversized zombie variant."
   },
   {
     "type": 54,
     "name": "Zombie",
     "text_type": "zombie",
-    "icon": "https://hosoinu.github.io/icons/54.png",
+    "icon": "icons/54.png",
     "description": "Common undead mob that burns in sunlight."
   },
   {
     "type": 55,
     "name": "Slime",
     "text_type": "slime",
-    "icon": "https://hosoinu.github.io/icons/55.png",
+    "icon": "icons/55.png",
     "description": "Bouncy green mob that splits when killed."
   },
   {
     "type": 56,
     "name": "Ghast",
     "text_type": "ghast",
-    "icon": "https://hosoinu.github.io/icons/56.png",
+    "icon": "icons/56.png",
     "description": "Floating Nether mob that shoots fireballs."
   },
   {
     "type": 57,
     "name": "Zombie Pigman",
     "text_type": "zombie_pigman",
-    "icon": "https://hosoinu.github.io/icons/57.png",
+    "icon": "icons/57.png",
     "description": "Neutral Nether mob (legacy name)."
   },
   {
     "type": 58,
     "name": "Enderman",
     "text_type": "enderman",
-    "icon": "https://hosoinu.github.io/icons/58.png",
+    "icon": "icons/58.png",
     "description": "Tall neutral mob that teleports and carries blocks."
   },
   {
     "type": 59,
     "name": "Cave Spider",
     "text_type": "cave_spider",
-    "icon": "https://hosoinu.github.io/icons/59.png",
+    "icon": "icons/59.png",
     "description": "Poisonous spider variant found in mineshafts."
   },
   {
     "type": 60,
     "name": "Silverfish",
     "text_type": "silverfish",
-    "icon": "https://hosoinu.github.io/icons/60.png",
+    "icon": "icons/60.png",
     "description": "Small mob hiding in monster eggs within stone."
   },
   {
     "type": 61,
     "name": "Blaze",
     "text_type": "blaze",
-    "icon": "https://hosoinu.github.io/icons/61.png",
+    "icon": "icons/61.png",
     "description": "Nether fortress mob that shoots fire charges."
   },
   {
     "type": 62,
     "name": "Magma Cube",
     "text_type": "magma_cube",
-    "icon": "https://hosoinu.github.io/icons/62.png",
+    "icon": "icons/62.png",
     "description": "Nether lava slime that splits when defeated."
   },
   {
     "type": 63,
     "name": "Ender Dragon",
     "text_type": "ender_dragon",
-    "icon": "https://hosoinu.github.io/icons/63.png",
+    "icon": "icons/63.png",
     "description": "Final boss mob of Minecraft in the End dimension."
   },
   {
     "type": 64,
     "name": "Wither",
     "text_type": "wither",
-    "icon": "https://hosoinu.github.io/icons/64.png",
+    "icon": "icons/64.png",
     "description": "Flying three-headed boss that destroys blocks."
   },
   {
     "type": 65,
     "name": "Bat",
     "text_type": "bat",
-    "icon": "https://hosoinu.github.io/icons/65.png",
+    "icon": "icons/65.png",
     "description": "Passive cave-dwelling ambient mob."
   },
   {
     "type": 66,
     "name": "Witch",
     "text_type": "witch",
-    "icon": "https://hosoinu.github.io/icons/66.png",
+    "icon": "icons/66.png",
     "description": "Swamp-dwelling mob that throws harmful potions."
   },
   {
     "type": 67,
     "name": "Endermite",
     "text_type": "endermite",
-    "icon": "https://hosoinu.github.io/icons/67.png",
+    "icon": "icons/67.png",
     "description": "Small End dimension pest hated by Endermen."
   },
   {
     "type": 68,
     "name": "Guardian",
     "text_type": "guardian",
-    "icon": "https://hosoinu.github.io/icons/68.png",
+    "icon": "icons/68.png",
     "description": "Underwater mob that shoots laser beams."
   },
   {
     "type": 69,
     "name": "Shulker",
     "text_type": "shulker",
-    "icon": "https://hosoinu.github.io/icons/69.png",
+    "icon": "icons/69.png",
     "description": "End city mob that shoots levitation projectiles."
   },
   {
     "type": 90,
     "name": "Pig",
     "text_type": "pig",
-    "icon": "https://hosoinu.github.io/icons/90.png",
+    "icon": "icons/90.png",
     "description": "Rideable passive mob attracted to carrots."
   },
-    {
+  {
     "type": 91,
     "name": "Sheep",
     "text_type": "sheep",
-    "icon": "https://hosoinu.github.io/icons/91.png",
-    "description": "Wool-producing mob that can be dyed different colors."
+    "icon": "icons/91.png",
+    "description": "Wool-producing mob that can be dyed."
   },
   {
     "type": 92,
     "name": "Cow",
     "text_type": "cow",
-    "icon": "https://hosoinu.github.io/icons/92.png",
-    "description": "Source of leather, milk, and beef. Found in grassy biomes."
+    "icon": "icons/92.png",
+    "description": "Source of leather and milk. Drops beef."
   },
   {
     "type": 93,
     "name": "Chicken",
     "text_type": "chicken",
-    "icon": "https://hosoinu.github.io/icons/93.png",
-    "description": "Egg-laying bird that drops feathers and raw chicken."
+    "icon": "icons/93.png",
+    "description": "Egg-laying bird that drops feathers and chicken."
   },
   {
     "type": 94,
     "name": "Squid",
     "text_type": "squid",
-    "icon": "https://hosoinu.github.io/icons/94.png",
-    "description": "Aquatic mob that emits ink clouds when attacked."
+    "icon": "icons/94.png",
+    "description": "Underwater mob that emits ink when attacked."
   },
   {
     "type": 95,
     "name": "Wolf",
     "text_type": "wolf",
-    "icon": "https://hosoinu.github.io/icons/95.png",
-    "description": "Tamable companion that attacks hostile mobs when tamed."
+    "icon": "icons/95.png",
+    "description": "Tamable mob that attacks skeletons and can be bred."
   },
   {
     "type": 96,
     "name": "Mooshroom",
     "text_type": "mooshroom",
-    "icon": "https://hosoinu.github.io/icons/96.png",
-    "description": "Mushroom-covered cow variant exclusive to mushroom islands."
+    "icon": "icons/96.png",
+    "description": "Mushroom-covered cow variant from mushroom biomes."
   },
   {
     "type": 97,
     "name": "Snow Golem",
     "text_type": "snowman",
-    "icon": "https://hosoinu.github.io/icons/97.png",
-    "description": "Utility mob that throws snowballs at enemies and melts in warm biomes."
+    "icon": "icons/97.png",
+    "description": "Utility mob that throws snowballs at enemies."
   },
   {
     "type": 98,
     "name": "Ocelot",
     "text_type": "ocelot",
-    "icon": "https://hosoinu.github.io/icons/98.png",
-    "description": "Shy jungle cat that can be tamed with raw fish."
+    "icon": "icons/98.png",
+    "description": "Shy jungle cat that can trust players."
   },
-  {
+    {
     "type": 99,
     "name": "Iron Golem",
     "text_type": "villager_golem",
-    "icon": "https://hosoinu.github.io/icons/99.png",
-    "description": "Protective construct that defends villages from threats."
+    "icon": "icons/99.png",
+    "description": "Protective mob that defends villagers. Drops iron ingots and poppies."
   },
   {
     "type": 100,
     "name": "Horse",
     "text_type": "horse",
-    "icon": "https://hosoinu.github.io/icons/100.png",
-    "description": "Rideable mob with varying speeds, colors, and jump heights."
+    "icon": "icons/100.png",
+    "description": "Rideable mob with variable speeds. Can wear armor and be bred."
   },
   {
     "type": 101,
     "name": "Rabbit",
     "text_type": "rabbit",
-    "icon": "https://hosoinu.github.io/icons/101.png",
-    "description": "Small hopper that drops rabbit hide and rare rabbit's foot."
+    "icon": "icons/101.png",
+    "description": "Small passive mob found in deserts/plains. Drops rabbit hide and feet."
   },
   {
     "type": 102,
     "name": "Polar Bear",
     "text_type": "polar_bear",
-    "icon": "https://hosoinu.github.io/icons/102.png",
-    "description": "Neutral arctic mob that becomes aggressive if cubs are nearby."
+    "icon": "icons/102.png",
+    "description": "Neutral icy biome mob. Attacks if cubs are nearby."
   },
   {
     "type": 103,
     "name": "Llama",
     "text_type": "llama",
-    "icon": "https://hosoinu.github.io/icons/103.png",
-    "description": "Caravan animal that can be equipped with decorative carpets."
+    "icon": "icons/103.png",
+    "description": "Caravan mob that can be equipped with carpets. Spits when angered."
   },
   {
     "type": 104,
     "name": "Llama Spit",
     "text_type": "llama_spit",
-    "icon": "https://hosoinu.github.io/icons/104.png",
-    "description": "Projectile attack used by llamas when provoked."
+    "icon": "icons/104.png",
+    "description": "Projectile attack from llamas. Causes minor damage."
   },
   {
     "type": 105,
     "name": "Parrot",
     "text_type": "parrot",
-    "icon": "https://hosoinu.github.io/icons/105.png",
-    "description": "Colorful tamable bird that mimics nearby mob sounds."
+    "icon": "icons/105.png",
+    "description": "Colorful tamable bird that mimics mob sounds and dances to music."
   },
   {
     "type": 120,
     "name": "Villager",
     "text_type": "villager",
-    "icon": "https://hosoinu.github.io/icons/120.png",
-    "description": "Trading NPC with profession-specific trades and outfits."
+    "icon": "icons/120.png",
+    "description": "Trading NPC with professions like farmer, librarian, or blacksmith."
   },
   {
     "type": 200,
     "name": "Ender Crystal",
     "text_type": "ender_crystal",
-    "icon": "https://hosoinu.github.io/icons/200.png",
-    "description": "Floating crystal used to heal the Ender Dragon in the End dimension."
+    "icon": "icons/200.png",
+    "description": "Floating crystal in the End that heals the Ender Dragon."
   }
 ]
-	
