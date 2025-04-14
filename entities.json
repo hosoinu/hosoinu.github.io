@@ -4,581 +4,663 @@
     "name": "Dropped Item",
     "text_type": "item",
     "icon": "https://hosoinu.github.io/icons/1.png",
-    "description": "A physical item dropped in the world. Can be collected by players."
+    "category": ["overworld"],
+    "description": "Visual representation of items dropped on death or thrown by players. Can despawn after 5 minutes. Use hoppers or magnets to collect automatically."
   },
   {
     "type": 2,
     "name": "Experience Orb",
     "text_type": "xp_orb",
     "icon": "https://hosoinu.github.io/icons/2.png",
-    "description": "Glowing spheres that provide XP for enchanting and repairs."
+    "category": ["overworld"],
+    "description": "Glowing spheres providing XP for enchanting (1-11 points per orb). Merge when close together. Disappear after 5 minutes if uncollected."
   },
   {
     "type": 3,
     "name": "Area Effect Cloud",
     "text_type": "area_effect_cloud",
     "icon": "https://hosoinu.github.io/icons/3.png",
-    "description": "Lingering potion effect zone that damages entities."
+    "category": ["overworld"],
+    "description": "Lingering effect from splash potions or dragon's breath. Damages entities every 0.5 seconds. Duration varies by potion type."
   },
   {
     "type": 4,
     "name": "Elder Guardian",
     "text_type": "elder_guardian",
     "icon": "https://hosoinu.github.io/icons/4.png",
-    "description": "Boss guardian in ocean monuments. Causes Mining Fatigue."
+    "category": ["overworld", "boss"],
+    "description": "Ocean monument mini-boss. Inflicts Mining Fatigue III (prevents block breaking). Drops prismarine shards/crystals and wet sponge. Spawns guardian spikes on death."
   },
   {
     "type": 5,
     "name": "Wither Skeleton",
     "text_type": "wither_skeleton",
     "icon": "https://hosoinu.github.io/icons/5.png",
-    "description": "Nether skeleton with stone swords. Drops coal and skulls."
+    "category": ["nether"],
+    "description": "Nether fortress mob with stone swords. 2.5% chance to drop wither skull (required for Wither summoning). Immune to fire damage."
   },
   {
     "type": 6,
     "name": "Stray",
     "text_type": "stray",
     "icon": "https://hosoinu.github.io/icons/6.png",
-    "description": "Icy skeleton that shoots Slowness arrows."
+    "category": ["overworld"],
+    "description": "Frozen skeleton variant from snowy biomes. Shoots Slowness arrows (0:30 effect). Drops tipped arrows and bones."
   },
   {
     "type": 7,
     "name": "Egg",
     "text_type": "egg",
     "icon": "https://hosoinu.github.io/icons/7.png",
-    "description": "Throwable chicken egg with small spawn chance."
+    "category": ["overworld"],
+    "description": "Throwable chicken projectile. 1/8 chance to spawn baby chicken. No damage to entities."
   },
   {
     "type": 8,
     "name": "Lead Knot",
     "text_type": "leash_knot",
     "icon": "https://hosoinu.github.io/icons/8.png",
-    "description": "Leash attachment point on fences for animals."
+    "category": ["overworld"],
+    "description": "Leash attachment point on fences. Break by attacking to retrieve lead. Persistent unless broken."
   },
   {
     "type": 9,
     "name": "Painting",
     "text_type": "painting",
     "icon": "https://hosoinu.github.io/icons/9.png",
-    "description": "Decorative wall art with random sizes/themes."
+    "category": ["overworld"],
+    "description": "Decorative wall item with random art (2x1 to 4x4 sizes). Place by right-clicking vertical surfaces."
   },
   {
     "type": 10,
     "name": "Arrow",
     "text_type": "arrow",
     "icon": "https://hosoinu.github.io/icons/10.png",
-    "description": "Standard projectile from bows."
+    "category": ["overworld"],
+    "description": "Standard projectile from bows. Can be tipped with potion effects. 1/5 chance to remain collectible after shooting."
   },
   {
     "type": 11,
     "name": "Snowball",
     "text_type": "snowball",
     "icon": "https://hosoinu.github.io/icons/11.png",
-    "description": "Throwable projectile that knocks back entities."
+    "category": ["overworld"],
+    "description": "Throwable projectile from snow blocks. Knocks back entities but deals no damage. Can activate TNT."
   },
   {
     "type": 12,
     "name": "Ghast Fireball",
     "text_type": "fireball",
     "icon": "https://hosoinu.github.io/icons/12.png",
-    "description": "Explosive projectile fired by Ghasts."
+    "category": ["nether"],
+    "description": "Explosive projectile from Ghasts (damage radius 3 blocks). Can be deflected with melee attacks."
   },
   {
     "type": 13,
     "name": "Blaze Fireball",
     "text_type": "small_fireball",
     "icon": "https://hosoinu.github.io/icons/13.png",
-    "description": "Fire projectile from Blazes in Nether fortresses."
+    "category": ["nether"],
+    "description": "Flaming projectile from Blazes. Lights blocks on fire. 5 damage per hit (2.5 hearts)."
   },
   {
     "type": 14,
     "name": "Ender Pearl",
     "text_type": "ender_pearl",
     "icon": "https://hosoinu.github.io/icons/14.png",
-    "description": "Throwable teleportation item with ender particles."
+    "category": ["overworld"],
+    "description": "Throwable teleportation item. Costs 2.5 hearts on use. 5% chance to spawn endermite on landing."
   },
   {
     "type": 15,
     "name": "Eye of Ender",
     "text_type": "eye_of_ender_signal",
     "icon": "https://hosoinu.github.io/icons/15.png",
-    "description": "Navigation item that locates End portals."
+    "category": ["overworld"],
+    "description": "Navigation tool for locating Strongholds. Breaks 20% chance per use. Required to activate End Portal."
   },
   {
     "type": 16,
     "name": "Splash Potion",
     "text_type": "potion",
     "icon": "https://hosoinu.github.io/icons/16.png",
-    "description": "Throwable potion with area-of-effect."
+    "category": ["overworld"],
+    "description": "Throwable potion with area effect (radius 4 blocks). Duration/strength depends on brewing ingredients."
   },
   {
     "type": 17,
     "name": "Bottle o' Enchanting",
     "text_type": "xp_bottle",
     "icon": "https://hosoinu.github.io/icons/17.png",
-    "description": "Throwable XP container from trading."
+    "category": ["overworld"],
+    "description": "Throwable XP source (3-11 points). Obtained from trading with cleric villagers."
   },
   {
     "type": 18,
     "name": "Item Frame",
     "text_type": "item_frame",
     "icon": "https://hosoinu.github.io/icons/18.png",
-    "description": "Wall-mounted display for items/maps."
+    "category": ["overworld"],
+    "description": "Wall-mounted display for items/maps. Rotate items with right-click. Drops contents when broken."
   },
   {
     "type": 19,
     "name": "Wither Skull",
     "text_type": "wither_skull",
     "icon": "https://hosoinu.github.io/icons/19.png",
-    "description": "Projectile fired by the Wither boss."
+    "category": ["nether"],
+    "description": "Projectile fired by Wither. Explodes on impact (damage 8 hearts). Blue variants bypass armor."
   },
   {
     "type": 20,
     "name": "Primed TNT",
     "text_type": "tnt",
     "icon": "https://hosoinu.github.io/icons/20.png",
-    "description": "Explosive block with fuse timer."
+    "category": ["overworld"],
+    "description": "Activated explosive with 4-second fuse. Can be ignited by redstone or fire. Destroys nearby blocks."
   },
   {
     "type": 21,
     "name": "Falling Block",
     "text_type": "falling_block",
     "icon": "https://hosoinu.github.io/icons/21.png",
-    "description": "Gravity-affected block like sand or gravel."
+    "category": ["overworld"],
+    "description": "Gravity-affected blocks like sand/gravel. Deals damage if entities are crushed. Turns into item form when landing."
   },
   {
     "type": 22,
     "name": "Firework Rocket",
     "text_type": "fireworks_rocket",
     "icon": "https://hosoinu.github.io/icons/22.png",
-    "description": "Launchable fireworks for visuals/elytra boosting."
+    "category": ["overworld"],
+    "description": "Launchable fireworks. Duration depends on gunpowder. Essential for elytra boosting (3s boost per rocket)."
   },
   {
     "type": 23,
     "name": "Husk",
     "text_type": "husk",
     "icon": "https://hosoinu.github.io/icons/23.png",
-    "description": "Desert zombie causing Hunger effect."
+    "category": ["overworld"],
+    "description": "Desert zombie variant. Inflicts Hunger (0:30 effect). Doesn't burn in sunlight. Drops sand occasionally."
   },
   {
     "type": 24,
     "name": "Spectral Arrow",
     "text_type": "spectral_arrow",
     "icon": "https://hosoinu.github.io/icons/24.png",
-    "description": "Arrow that creates glowing target outline."
+    "category": ["overworld"],
+    "description": "Glowing arrow from crafting with glowstone. Reveals target through walls (10s duration). No direct damage bonus."
   },
   {
     "type": 25,
     "name": "Shulker Bullet",
     "text_type": "shulker_bullet",
     "icon": "https://hosoinu.github.io/icons/25.png",
-    "description": "Homing projectile from Shulkers in End cities."
+    "category": ["end"],
+    "description": "Homing projectile from Shulkers. Applies Levitation (10s). Can be destroyed with attacks."
   },
   {
     "type": 26,
     "name": "Dragon Fireball",
     "text_type": "dragon_fireball",
     "icon": "https://hosoinu.github.io/icons/26.png",
-    "description": "Ender Dragon's explosive purple fireball."
+    "category": ["end"],
+    "description": "Ender Dragon's explosive attack. Creates lingering damage cloud. Breaks most blocks on impact."
   },
   {
     "type": 27,
     "name": "Zombie Villager",
     "text_type": "zombie_villager",
     "icon": "https://hosoinu.github.io/icons/27.png",
-    "description": "Curable zombie variant of villagers."
+    "category": ["overworld"],
+    "description": "Curable zombie variant. Splash with Weakness + feed golden apple to cure. Retains original profession."
   },
   {
     "type": 28,
     "name": "Skeleton Horse",
     "text_type": "skeleton_horse",
     "icon": "https://hosoinu.github.io/icons/28.png",
-    "description": "Undead horse spawned during thunderstorms."
+    "category": ["overworld"],
+    "description": "Undead horse spawned during thunderstorms. 0.75% chance from lightning strike. Immune to drowning."
   },
   {
     "type": 29,
     "name": "Zombie Horse",
     "text_type": "zombie_horse",
     "icon": "https://hosoinu.github.io/icons/29.png",
-    "description": "Unridable undead horse variant."
+    "category": ["overworld"],
+    "description": "Unridable undead horse. Only spawns via commands or mods. Immune to fire/fall damage."
   },
   {
     "type": 30,
     "name": "Armor Stand",
     "text_type": "armor_stand",
     "icon": "https://hosoinu.github.io/icons/30.png",
-    "description": "Customizable mannequin for displaying gear."
+    "category": ["overworld"],
+    "description": "Customizable display for armor/tools. Use redstone to pose. Survives in lava but burns in fire."
   },
   {
     "type": 31,
     "name": "Donkey",
     "text_type": "donkey",
     "icon": "https://hosoinu.github.io/icons/31.png",
-    "description": "Rideable mob with chest storage capacity."
+    "category": ["overworld"],
+    "description": "Rideable mob with 15 inventory slots. Breed with golden apples/carrots. Slower than horses but can wear chests."
   },
   {
     "type": 32,
     "name": "Mule",
     "text_type": "mule",
     "icon": "https://hosoinu.github.io/icons/32.png",
-    "description": "Donkey-horse hybrid with storage capacity."
+    "category": ["overworld"],
+    "description": "Donkey-horse hybrid. 15 inventory slots. Cannot breed. Immune to zombie infections."
   },
   {
     "type": 33,
     "name": "Evocation Fangs",
     "text_type": "evocation_fangs",
     "icon": "https://hosoinu.github.io/icons/33.png",
-    "description": "Attack summoned by Evokers in woodland mansions."
+    "category": ["overworld"],
+    "description": "Attack summoned by Evokers. Deals 6 damage (3 hearts). Passes through shields. Avoid by jumping."
   },
   {
     "type": 34,
     "name": "Evoker",
     "text_type": "evocation_illager",
     "icon": "https://hosoinu.github.io/icons/34.png",
-    "description": "Spell-casting illager that summons fangs and vexes."
+    "category": ["overworld"],
+    "description": "Woodland mansion spellcaster. Summons fangs and vexes. Drops totem of undying (100% chance)."
   },
   {
     "type": 35,
     "name": "Vex",
     "text_type": "vex",
     "icon": "https://hosoinu.github.io/icons/35.png",
-    "description": "Ghostly minion summoned by Evokers."
+    "category": ["overworld"],
+    "description": "Ghostly Evoker minion. Phases through blocks. 2-minute lifespan. Drops nothing."
   },
   {
     "type": 36,
     "name": "Vindicator",
     "text_type": "vindication_illager",
     "icon": "https://hosoinu.github.io/icons/36.png",
-    "description": "Axe-wielding illager from woodland mansions."
+    "category": ["overworld"],
+    "description": "Axe-wielding mansion illager. Attacks villagers/iron golems. Drops emeralds (50% chance)."
   },
   {
     "type": 37,
     "name": "Illusioner",
     "text_type": "illusion_illager",
     "icon": "https://hosoinu.github.io/icons/37.png",
-    "description": "Unused illager mob with invisibility spells."
+    "category": ["overworld"],
+    "description": "Unused illager with invisibility spells. Only spawns via commands. Shoots spectral arrows."
   },
   {
     "type": 40,
     "name": "Minecart with Command Block",
     "text_type": "commandblock_minecart",
     "icon": "https://hosoinu.github.io/icons/40.png",
-    "description": "Minecart with command block functionality."
+    "category": ["overworld"],
+    "description": "Redstone component minecart. Executes commands when activated. Requires operator permissions."
   },
   {
     "type": 41,
     "name": "Boat",
     "text_type": "boat",
     "icon": "https://hosoinu.github.io/icons/41.png",
-    "description": "Wooden water vehicle for quick travel."
+    "category": ["overworld"],
+    "description": "Wooden watercraft. Breaks into planks/sticks on impact. Fishes automatically in biomes with high fish density."
   },
   {
     "type": 42,
     "name": "Minecart",
     "text_type": "minecart",
     "icon": "https://hosoinu.github.io/icons/42.png",
-    "description": "Basic rail vehicle for transportation."
+    "category": ["overworld"],
+    "description": "Basic rail vehicle. Speed depends on rail type (powered rails boost speed). Pushes entities on collision."
   },
   {
     "type": 43,
     "name": "Storage Minecart",
     "text_type": "chest_minecart",
     "icon": "https://hosoinu.github.io/icons/43.png",
-    "description": "Minecart with 27-slot storage capacity."
+    "category": ["overworld"],
+    "description": "Minecart with 27-slot inventory. Links to hoppers for automatic loading/unloading. Requires flat rails."
   },
   {
     "type": 44,
     "name": "Powered Minecart",
     "text_type": "furnace_minecart",
     "icon": "https://hosoinu.github.io/icons/44.png",
-    "description": "Minecart powered by furnace engine."
+    "category": ["overworld"],
+    "description": "Coal-powered minecart. Right-click with fuel to accelerate. Pushes other minecarts."
   },
   {
     "type": 45,
     "name": "Minecart with TNT",
     "text_type": "tnt_minecart",
     "icon": "https://hosoinu.github.io/icons/45.png",
-    "description": "Explosive minecart activated by rails."
+    "category": ["overworld"],
+    "description": "Explosive rail vehicle. Detonates via activator rail or fire. Breaks blocks in 4-block radius."
   },
   {
     "type": 46,
     "name": "Minecart with Hopper",
     "text_type": "hopper_minecart",
     "icon": "https://hosoinu.github.io/icons/46.png",
-    "description": "Minecart that collects items through hoppers."
+    "category": ["overworld"],
+    "description": "Item-collecting minecart. Pulls items from above containers. Transfers 1 item/sec to adjacent hoppers."
   },
   {
     "type": 47,
     "name": "Minecart with Spawner",
     "text_type": "spawner_minecart",
     "icon": "https://hosoinu.github.io/icons/47.png",
-    "description": "Minecart containing mob spawner."
+    "category": ["overworld"],
+    "description": "Mobile monster spawner. Requires creative mode. Spawns mobs based on contained spawn egg."
   },
   {
     "type": 50,
     "name": "Creeper",
     "text_type": "creeper",
     "icon": "https://hosoinu.github.io/icons/50.png",
-    "description": "Explosive green mob with silent approach."
+    "category": ["overworld"],
+    "description": "Explosive green mob. Detonates after 1.5s fuse (damage scales with proximity). Charged variant during thunderstorms deals 2x damage. Drops gunpowder (0-2)."
   },
   {
     "type": 51,
     "name": "Skeleton",
     "text_type": "skeleton",
     "icon": "https://hosoinu.github.io/icons/51.png",
-    "description": "Bow-wielding undead mob vulnerable to sunlight."
+    "category": ["overworld"],
+    "description": "Bow-wielding undead. Burns in sunlight. 22.5% chance to drop bow (enchanted in Hard mode). Converts to stray in powder snow."
   },
   {
     "type": 52,
     "name": "Spider",
     "text_type": "spider",
     "icon": "https://hosoinu.github.io/icons/52.png",
-    "description": "Hostile cave-dwelling arachnid."
+    "category": ["overworld"],
+    "description": "Hostile arachnid that climbs walls and attacks in dark areas. Drops string (0-2) and spider eyes (33% chance). Burns in sunlight unless under blocks."
   },
   {
     "type": 53,
     "name": "Giant Zombie",
     "text_type": "giant",
     "icon": "https://hosoinu.github.io/icons/53.png",
-    "description": "Unused oversized zombie variant."
+    "category": ["overworld"],
+    "description": "Unused mob (12-block tall zombie). Only spawnable via commands. Deals massive damage but has no AI."
   },
   {
     "type": 54,
     "name": "Zombie",
     "text_type": "zombie",
     "icon": "https://hosoinu.github.io/icons/54.png",
-    "description": "Common undead mob that burns in sunlight."
+    "category": ["overworld"],
+    "description": "Common undead mob. Burns in sunlight. Converts villagers to zombie villagers. Drops rotten flesh (0-2) and rarely iron ingots."
   },
   {
     "type": 55,
     "name": "Slime",
     "text_type": "slime",
     "icon": "https://hosoinu.github.io/icons/55.png",
-    "description": "Bouncy green mob that splits when killed."
+    "category": ["overworld"],
+    "description": "Bouncy cube that splits into smaller slimes when killed. Size determines health/drops. Drops slimeballs (0-2), essential for sticky pistons."
   },
   {
     "type": 56,
     "name": "Ghast",
     "text_type": "ghast",
     "icon": "https://hosoinu.github.io/icons/56.png",
-    "description": "Floating Nether mob that shoots fireballs."
+    "category": ["nether"],
+    "description": "Floating Nether mob that shoots explosive fireballs. Deflect projectiles with melee attacks. Drops ghast tears (0-1) and gunpowder."
   },
   {
     "type": 57,
     "name": "Zombie Pigman",
     "text_type": "zombie_pigman",
     "icon": "https://hosoinu.github.io/icons/57.png",
-    "description": "Neutral Nether mob (legacy name)."
+    "category": ["nether"],
+    "description": "Neutral Nether mob (legacy name: now called 'Zombified Piglin'). Attacks if harmed. Drops gold nuggets (0-1) and rotten flesh."
   },
   {
     "type": 58,
     "name": "Enderman",
     "text_type": "enderman",
     "icon": "https://hosoinu.github.io/icons/58.png",
-    "description": "Tall neutral mob that teleports and carries blocks."
+    "category": ["end"],
+    "description": "Tall neutral mob that teleports. Avoid eye contact to prevent aggression. Drops ender pearls (0-1) used for End access."
   },
   {
     "type": 59,
     "name": "Cave Spider",
     "text_type": "cave_spider",
     "icon": "https://hosoinu.github.io/icons/59.png",
-    "description": "Poisonous spider variant found in mineshafts."
+    "category": ["overworld"],
+    "description": "Smaller, poisonous spider variant in mineshafts. Inflicts Poison (0:07). Drops spider eyes (33% chance)."
   },
   {
     "type": 60,
     "name": "Silverfish",
     "text_type": "silverfish",
     "icon": "https://hosoinu.github.io/icons/60.png",
-    "description": "Small mob hiding in monster eggs within stone."
+    "category": ["overworld"],
+    "description": "Tiny mob hiding in monster eggs (infested blocks). Summons others when attacked. Drops nothing."
   },
   {
     "type": 61,
     "name": "Blaze",
     "text_type": "blaze",
     "icon": "https://hosoinu.github.io/icons/61.png",
-    "description": "Nether fortress mob that shoots fire charges."
+    "category": ["nether"],
+    "description": "Nether fortress mob that shoots fireballs. Weak to water/snowballs. Drops blaze rods (0-1), essential for brewing."
   },
   {
     "type": 62,
     "name": "Magma Cube",
     "text_type": "magma_cube",
     "icon": "https://hosoinu.github.io/icons/62.png",
-    "description": "Nether lava slime that splits when defeated."
+    "category": ["nether"],
+    "description": "Nether lava slime. Splits into smaller cubes when killed. Drops magma cream (0-1) for fire resistance potions."
   },
   {
     "type": 63,
     "name": "Ender Dragon",
     "text_type": "ender_dragon",
     "icon": "https://hosoinu.github.io/icons/63.png",
-    "description": "Final boss mob of Minecraft in the End dimension."
+    "category": ["end", "boss"],
+    "description": "Final boss of Minecraft. Destroy End Crystals first to prevent healing. Drops 12,000 XP and dragon egg. Respawns with crystals."
   },
   {
     "type": 64,
     "name": "Wither",
     "text_type": "wither",
     "icon": "https://hosoinu.github.io/icons/64.png",
-    "description": "Flying three-headed boss that destroys blocks."
+    "category": ["nether", "boss"],
+    "description": "Summoned boss (3 wither skulls + 4 soul sand). Shoots explosive skulls. Drops nether star for beacons. Destroys most blocks."
   },
   {
     "type": 65,
     "name": "Bat",
     "text_type": "bat",
     "icon": "https://hosoinu.github.io/icons/65.png",
-    "description": "Passive cave-dwelling ambient mob."
+    "category": ["overworld"],
+    "description": "Passive cave mob. Flies erratically. Drops nothing. Indicates nearby caves."
   },
   {
     "type": 66,
     "name": "Witch",
     "text_type": "witch",
     "icon": "https://hosoinu.github.io/icons/66.png",
-    "description": "Swamp-dwelling mob that throws harmful potions."
+    "category": ["overworld"],
+    "description": "Swamp-dwelling mob that throws harmful potions. Drops sticks, glowstone, and healing potions. Immune to poison."
   },
   {
     "type": 67,
     "name": "Endermite",
     "text_type": "endermite",
     "icon": "https://hosoinu.github.io/icons/67.png",
-    "description": "Small End dimension pest hated by Endermen."
+    "category": ["end"],
+    "description": "Tiny pest from ender pearls. Hated by Endermen. Drops nothing. Despawns after 2 minutes."
   },
   {
     "type": 68,
     "name": "Guardian",
     "text_type": "guardian",
     "icon": "https://hosoinu.github.io/icons/68.png",
-    "description": "Underwater mob that shoots laser beams."
+    "category": ["overworld"],
+    "description": "Underwater mob in ocean monuments. Shoots lasers. Drops prismarine shards/crystals. Elder Guardian inflicts Mining Fatigue."
   },
   {
     "type": 69,
     "name": "Shulker",
     "text_type": "shulker",
     "icon": "https://hosoinu.github.io/icons/69.png",
-    "description": "End city mob that shoots levitation projectiles."
+    "category": ["end"],
+    "description": "End city mob that hides in shells. Shoots levitation projectiles. Drops shulker shells (50% chance) for portable storage."
   },
   {
     "type": 90,
     "name": "Pig",
     "text_type": "pig",
     "icon": "https://hosoinu.github.io/icons/90.png",
-    "description": "Rideable passive mob attracted to carrots."
+    "category": ["overworld"],
+    "description": "Passive mob. Rideable with saddle. Attracted to carrots. Drops porkchops (1-3) when killed."
   },
-    {
+  {
     "type": 91,
     "name": "Sheep",
     "text_type": "sheep",
     "icon": "https://hosoinu.github.io/icons/91.png",
-    "description": "Wool-producing mob that can be dyed different colors."
+    "category": ["overworld"],
+    "description": "Wool-producing mob. Shear for wool or dye for colored variants. Drops mutton (1-2) when killed."
   },
   {
     "type": 92,
     "name": "Cow",
     "text_type": "cow",
     "icon": "https://hosoinu.github.io/icons/92.png",
-    "description": "Source of leather, milk, and beef. Found in grassy biomes."
+    "category": ["overworld"],
+    "description": "Source of leather, milk, and beef. Drops 1-3 raw beef. Use bucket for milk (cures status effects)."
   },
   {
     "type": 93,
     "name": "Chicken",
     "text_type": "chicken",
     "icon": "https://hosoinu.github.io/icons/93.png",
-    "description": "Egg-laying bird that drops feathers and raw chicken."
+    "category": ["overworld"],
+    "description": "Lays eggs every 5-10 minutes. Drops feathers (0-2) and raw chicken. Baby chickens follow adults."
   },
   {
     "type": 94,
     "name": "Squid",
     "text_type": "squid",
     "icon": "https://hosoinu.github.io/icons/94.png",
-    "description": "Aquatic mob that emits ink clouds when attacked."
+    "category": ["overworld"],
+    "description": "Aquatic mob. Emits ink when attacked. Drops ink sacs (1-3) for dye. Cannot survive out of water."
   },
   {
     "type": 95,
     "name": "Wolf",
     "text_type": "wolf",
     "icon": "https://hosoinu.github.io/icons/95.png",
-    "description": "Tamable companion that attacks hostile mobs when tamed."
+    "category": ["overworld"],
+    "description": "Tamable mob. Heal with meat. Attacks skeletons and hostile mobs when tamed. Drops nothing."
   },
   {
     "type": 96,
     "name": "Mooshroom",
     "text_type": "mooshroom",
     "icon": "https://hosoinu.github.io/icons/96.png",
-    "description": "Mushroom-covered cow variant exclusive to mushroom islands."
+    "category": ["overworld"],
+    "description": "Mushroom-covered cow from mushroom biomes. Shear for mushrooms. Drops red mushrooms when killed."
   },
   {
     "type": 97,
     "name": "Snow Golem",
     "text_type": "snowman",
     "icon": "https://hosoinu.github.io/icons/97.png",
-    "description": "Utility mob that throws snowballs at enemies and melts in warm biomes."
+    "category": ["overworld"],
+    "description": "Utility mob built with pumpkins and snow. Throws snowballs at enemies. Melts in warm biomes/rain."
   },
   {
     "type": 98,
     "name": "Ocelot",
     "text_type": "ocelot",
     "icon": "https://hosoinu.github.io/icons/98.png",
-    "description": "Shy jungle cat that can be tamed with raw fish."
+    "category": ["overworld"],
+    "description": "Shy jungle cat. Tame with raw fish to create a cat. Scares away creepers and phantoms."
   },
   {
     "type": 99,
     "name": "Iron Golem",
     "text_type": "villager_golem",
     "icon": "https://hosoinu.github.io/icons/99.png",
-    "description": "Protective construct that defends villages from threats."
+    "category": ["overworld"],
+    "description": "Protects villagers. Crafted with iron blocks and pumpkin. Drops iron ingots (3-5) and poppies."
   },
   {
     "type": 100,
     "name": "Horse",
     "text_type": "horse",
     "icon": "https://hosoinu.github.io/icons/100.png",
-    "description": "Rideable mob with varying speeds, colors, and jump heights."
+    "category": ["overworld"],
+    "description": "Rideable mob with variable speed/jump stats. Breed with golden apples. Armor reduces damage."
   },
   {
     "type": 101,
     "name": "Rabbit",
     "text_type": "rabbit",
     "icon": "https://hosoinu.github.io/icons/101.png",
-    "description": "Small hopper that drops rabbit hide and rare rabbit's foot."
+    "category": ["overworld"],
+    "description": "Fast hopper in deserts/flower forests. Drops rabbit hide (0-1) and rare rabbit’s foot (10% chance)."
   },
   {
     "type": 102,
     "name": "Polar Bear",
     "text_type": "polar_bear",
     "icon": "https://hosoinu.github.io/icons/102.png",
-    "description": "Neutral arctic mob that becomes aggressive if cubs are nearby."
+    "category": ["overworld"],
+    "description": "Neutral mob in icy biomes. Attacks if cubs are nearby. Drops fish (0-2). Cannot be tamed."
   },
   {
     "type": 103,
     "name": "Llama",
     "text_type": "llama",
     "icon": "https://hosoinu.github.io/icons/103.png",
-    "description": "Caravan animal that can be equipped with decorative carpets."
+    "category": ["overworld"],
+    "description": "Caravan mob. Equip with carpets. Spits when angered. Drops leather (0-2). Can carry chests."
   },
   {
     "type": 104,
     "name": "Llama Spit",
     "text_type": "llama_spit",
     "icon": "https://hosoinu.github.io/icons/104.png",
-    "description": "Projectile attack used by llamas when provoked."
+    "category": ["overworld"],
+    "description": "Projectile from llamas. Deals 1 heart damage. No drops. Despawns quickly."
   },
   {
     "type": 105,
     "name": "Parrot",
     "text_type": "parrot",
     "icon": "https://hosoinu.github.io/icons/105.png",
-    "description": "Colorful tamable bird that mimics nearby mob sounds."
+    "category": ["overworld"],
+    "description": "Tamable bird. Mimics mob sounds. Dance to music discs. Feed cookies to kill (toxic)."
   },
   {
     "type": 120,
     "name": "Villager",
     "text_type": "villager",
     "icon": "https://hosoinu.github.io/icons/120.png",
-    "description": "Trading NPC with profession-specific trades and outfits."
+    "category": ["overworld"],
+    "description": "Trading NPC. Professions include farmer, librarian, and blacksmith. Cured zombie villagers offer discounts."
   },
   {
     "type": 200,
     "name": "Ender Crystal",
     "text_type": "ender_crystal",
     "icon": "https://hosoinu.github.io/icons/200.png",
-    "description": "Floating crystal used to heal the Ender Dragon in the End dimension."
+    "category": ["end", "boss"],
+    "description": "Heals the Ender Dragon. Destroy to progress the fight. Explodes violently when broken."
   }
 ]
-	
