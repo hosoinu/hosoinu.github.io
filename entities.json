@@ -93,7 +93,7 @@
     "text_type": "fireball",
     "icon": "https://hosoinu.github.io/icons/12.png",
     "category": ["nether"],
-    "description": "Large explosive projectile fired by ghasts in the Nether. Creates explosion with power comparable to TNT (blast radius approximately 3 blocks). Deals up to 9❤️ damage at direct hit, with damage decreasing with distance from explosion. Sets surrounding blocks on fire in a 4-5 block radius. Unlike TNT, can destroy blocks even in areas where mob griefing is disabled. Can be deflected back toward ghasts by hitting with any tool or weapon (even bare hands), providing a unique way to kill ghasts with their own attacks. Strategy: Listen for ghast cries to locate them before they fire. When exploring Nether, always carry fire resistance potions to mitigate fireball damage. Deflecting fireballs requires precise timing - practice this skill for Nether survival. Use ghast fireballs strategically to clear large areas of netherrack when mining. In multiplayer, be mindful of other players when deflecting fireballs to avoid friendly fire. The "Return to Sender" advancement requires killing a ghast with its own fireball."
+    "description": "Large explosive projectile fired by ghasts in the Nether. Creates explosion with power comparable to TNT (blast radius approximately 3 blocks). Deals up to 9❤️ damage at direct hit, with damage decreasing with distance from explosion. Sets surrounding blocks on fire in a 4-5 block radius. Unlike TNT, can destroy blocks even in areas where mob griefing is disabled. Can be deflected back toward ghasts by hitting with any tool or weapon (even bare hands), providing a unique way to kill ghasts with their own attacks. Strategy: Listen for ghast cries to locate them before they fire. When exploring Nether, always carry fire resistance potions to mitigate fireball damage. Deflecting fireballs requires precise timing - practice this skill for Nether survival. Use ghast fireballs strategically to clear large areas of netherrack when mining. In multiplayer, be mindful of other players when deflecting fireballs to avoid friendly fire. The 'Return to Sender' advancement requires killing a ghast with its own fireball."
   },
   {
     "type": 13,
@@ -261,7 +261,7 @@
     "text_type": "evocation_fangs",
     "icon": "https://hosoinu.github.io/icons/33.png",
     "category": ["overworld"],
-    "description": "Magical attack summoned by Evokers in woodland mansions. Health: N/A. Damage: 6❤️ per fang (multiple can hit simultaneously). Technical: Spawns in circular pattern around target. Unblockable by shields - must jump to avoid. Strategy: Listen for distinct casting sound (deep "vwoom") as warning. Destroy Evokers quickly to prevent repeated summons. Water doesn't affect fangs. Particles appear 0.5s before damage - time jumps carefully. In raids, prioritize killing Evokers before other illagers. Can be used against enemies in PvP if lured into fang areas."
+    "description": "Magical attack summoned by Evokers in woodland mansions. Health: N/A. Damage: 6❤️ per fang (multiple can hit simultaneously). Technical: Spawns in circular pattern around target. Unblockable by shields - must jump to avoid. Strategy: Listen for distinct casting sound (deep 'vwoom') as warning. Destroy Evokers quickly to prevent repeated summons. Water doesn't affect fangs. Particles appear 0.5s before damage - time jumps carefully. In raids, prioritize killing Evokers before other illagers. Can be used against enemies in PvP if lured into fang areas."
   },
   {
     "type": 34,
