@@ -1,12 +1,11 @@
 [
-  [
   {
     "type": 1,
     "name": "Dropped Item",
     "text_type": "item",
     "icon": "https://hosoinu.github.io/icons/1.png",
     "category": ["overworld"],
-    "description": "Entity representing in-game items. Health: N/A. Damage: N/A. Technical: 0.25x0.25 block hitbox. Despawns after 5 minutes (6000 ticks). Merges stacks within 2s. Strategic: Use hopper minecarts for automated collection."
+    "description": "Entities representing physical items in the world. Items will float slightly above the ground and bob up and down. They'll automatically merge with identical items nearby (within 0.5 blocks) if dropped within 2 seconds of each other. Items despawn after exactly 5 minutes (6000 game ticks) unless a player is within 128 blocks. Strategy: For item collection systems, use water streams directed toward hoppers or hopper minecarts. If you die and need to recover items, you have exactly 5 minutes to reach your death location before items disappear permanently. Items won't despawn if chunks are unloaded."
   },
   {
     "type": 2,
@@ -14,7 +13,7 @@
     "text_type": "xp_orb",
     "icon": "https://hosoinu.github.io/icons/2.png",
     "category": ["overworld"],
-    "description": "XP source for enchanting. Health: N/A. Damage: N/A. Technical: Orbs merge when within 2.5 blocks. Small (1-3 XP), Medium (4-7 XP), Large (8-11 XP). Despawns after 5 minutes."
+    "description": "Glowing green-yellow orbs that award experience points when collected. Experience orbs are attracted to players within 8 blocks and will automatically move toward them. They come in different sizes corresponding to their XP value: tiny (1-2 XP), small (3-6 XP), medium (7-16 XP), large (17-36 XP), and huge (37-73 XP). Orbs make a distinctive 'ding' sound when collected. They despawn after exactly 5 minutes (6000 game ticks). Strategy: XP can repair items with Mending enchantment when collected. For XP farms, stand in water so orbs float toward you against water currents. Orbs within 2.5 blocks of each other merge to reduce lag."
   },
   {
     "type": 3,
@@ -22,7 +21,7 @@
     "text_type": "area_effect_cloud",
     "icon": "https://hosoinu.github.io/icons/3.png",
     "category": ["overworld"],
-    "description": "Lingering potion effect. Health: N/A. Damage: Varies by potion (e.g., Harming: 6❤️/s). Duration: 30s to 8 minutes. Technical: Created by splash/lingering potions or dragon breath."
+    "description": "Invisible entity that applies potion effects to creatures within its radius. Created by splash/lingering potions, dragon breath, or commands. Duration varies from 30 seconds to 8 minutes depending on source. Effects any entity inside the cloud every 0.5 seconds. Dragon breath clouds appear purple and deal 1❤️ damage per second. Lingering potion clouds start at 3-block radius and shrink over time. Damage varies by potion type (e.g., Harming II: 6❤️/second). Strategy: Use lingering potions of Healing in multiplayer team fights to support allies. Create traps with Harming, Poison, or Slowness clouds in narrow passages. In boss fights, watch ground carefully to avoid standing in dragon breath clouds. Immune to conventional attacks and cannot be removed except by waiting out duration."
   },
   {
     "type": 4,
@@ -30,7 +29,7 @@
     "text_type": "elder_guardian",
     "icon": "https://hosoinu.github.io/icons/4.png",
     "category": ["overworld", "boss"],
-    "description": "Ocean monument boss. Health: 80 HP (40❤️). Damage: Laser (6❤️/1.5s) + Mining Fatigue III. Drops: 0-2 prismarine shards (60%), 0-1 prismarine crystal (33%). Strategy: Break line of sight with walls."
+    "description": "Mini-boss found exclusively in ocean monuments, recognizable by its larger size and spikes. Health: 80 HP (40❤️). Attack: Laser beam (6❤️ damage with 1.5s charge-up). Special abilities: Inflicts Mining Fatigue III (reduces mining speed by 70%) for 5 minutes to all players within 50 blocks every 60 seconds. Has thorns-like damage reflection. Drops: Wet sponges (rare, needed for water removal), prismarine shards and crystals, raw cod, and up to 37 XP orbs. Usually only 3 spawn per monument (one in the top room, two in wing sections). Strategy: Use milk buckets to clear Mining Fatigue effect. Build walls to break line of sight for the laser attack. Door trick: place a door in water to create an air pocket for breathing. Water Breathing or Respiration enchantments highly recommended. Susceptible to Impaling enchantment."
   },
   {
     "type": 5,
@@ -38,7 +37,7 @@
     "text_type": "wither_skeleton",
     "icon": "https://hosoinu.github.io/icons/5.png",
     "category": ["nether"],
-    "description": "Nether fortress mob. Health: 20 HP (10❤️). Damage: Stone sword (4❤️) + Wither effect (10s). Drops: Wither skull (2.5%), coal (33%). Strategy: Lure to Nether wart farms."
+    "description": "Tall, blackened skeletons that spawn in Nether fortresses. Health: 20 HP (10❤️). Attack: Stone sword (4❤️) plus Wither effect that deals damage over time (level II, 10 seconds, black hearts). Immune to fire and lava damage. Can spawn wearing armor (rare). Drops: Coal (0-1, 33% chance), bones (0-2, 33% chance), stone sword (8.5% chance), and rarely wither skeleton skulls (2.5% chance, increased with Looting). Wither skeletons are vital for summoning the Wither boss, which requires 3 skulls. Strategy: Build wither skeleton farms on Nether fortress crossings for skull farming. Use a bow to attack from a distance to avoid the Wither effect. Smite enchantment deals extra damage. Build 2-block high barriers they can't cross for protection. Looting III significantly improves skull drop rates. Can be found prowling Nether wart farms if left unattended."
   },
   {
     "type": 6,
@@ -46,7 +45,7 @@
     "text_type": "stray",
     "icon": "https://hosoinu.github.io/icons/6.png",
     "category": ["overworld"],
-    "description": "Frozen skeleton. Health: 20 HP (10❤️). Damage: Slowness arrow (0:30 effect). Drops: 0-2 arrows (50%), tipped arrows (8.5%). Strategy: Farm in icy biomes."
+    "description": "Frozen variant of skeletons that spawn in snowy biomes when light level is 0. Health: 20 HP (10❤️). Attack: Bow (1-4❤️) with Slowness arrows (Slowness II for 30 seconds). Distinguishable by their tattered blue-white clothing. Burns in daylight unless wearing helmet or standing in water/shade. Drops: Bones (0-2), arrows (0-2), bow (8.5% chance), and the valuable Slowness tipped arrows (8.5% chance, useful for PvP and handling fast mobs). Strategy: Farm in frozen biomes at night for tipped arrows. Use wolves to hunt them efficiently as wolves deal extra damage to all skeleton types. Fire aspect weapons effective as they're vulnerable to fire damage despite spawning in cold biomes. Their slowness arrows make them more dangerous than regular skeletons when escaping. In early game, their arrows can be used against other mobs to slow them down."
   },
   {
     "type": 7,
@@ -54,7 +53,7 @@
     "text_type": "egg",
     "icon": "https://hosoinu.github.io/icons/7.png",
     "category": ["overworld"],
-    "description": "Chicken projectile. Health: N/A. Damage: Knockback only. Technical: 1/8 chance to spawn chick. Strategic: Use for automatic chicken farms."
+    "description": "Throwable projectile that can spawn chickens. Appears as the egg item when airborne. Deals very minor knockback but no actual damage. When thrown, has a 1/8 (12.5%) chance to spawn a baby chicken, and a rare 1/32 (3.125%) chance to spawn four chicks at once. Fired by right-clicking while holding egg items. Maximum throwing range is approximately 30 blocks. Strategy: Collect from chickens for automatic chicken farms (one egg every 5-10 minutes per chicken). Use hoppers beneath chickens to automate collection. For food farms, use dispensers to automatically throw eggs into a contained area, then harvest grown chickens later. Eggs can knock entities off ledges despite doing no damage. In multiplayer, throwing eggs at other players is sometimes used as a harmless prank. Can be used to start a chicken farm in biomes where animals are scarce."
   },
   {
     "type": 8,
@@ -62,7 +61,7 @@
     "text_type": "leash_knot",
     "icon": "https://hosoinu.github.io/icons/8.png",
     "category": ["overworld"],
-    "description": "Leash attachment point. Health: N/A. Damage: N/A. Technical: Persists until broken. Strategic: Use for animal pens."
+    "description": "Invisible connection point that appears as a small knot when a lead (leash) is attached to a fence post. Created by right-clicking a fence while leading a mob. Can attach multiple leads to the same knot point to organize different animals. Breaking the fence or knot will drop the lead item. Maximum lead length is 10 blocks from the knot to each attached mob. Mobs will still try to follow their AI patterns but will be restricted by the lead's length. Strategy: Essential for animal farms and organization. Use for creating petting zoos with passive mobs. In decorative building, can make rope bridges by connecting multiple knots. Prevents animal despawning by keeping them from wandering too far. Place multiple fence posts to give animals more roaming area while keeping them contained. Be aware that some hostile mobs (like zombies and skeletons) cannot be leashed without mods or commands."
   },
   {
     "type": 9,
@@ -70,7 +69,7 @@
     "text_type": "painting",
     "icon": "https://hosoinu.github.io/icons/9.png",
     "category": ["overworld"],
-    "description": "Decorative wall art. Health: N/A. Damage: N/A. Technical: 26 variants (sizes 1x1 to 4x4). Drops: Painting item (100%)."
+    "description": "Decorative wall art entity placed on solid block surfaces. Available in 26 different designs of varying sizes (1×1 to 4×4 blocks). Placement is semi-random - the game will choose the largest painting that fits the available space when placed. To cycle through options, repeatedly break and replace until desired image appears. Names reference real-world art and gaming culture (e.g., 'Wither' shows the Minecraft boss while 'Wanderer' references Caspar David Friedrich's painting). All paintings drop as the same generic painting item regardless of their appearance. Strategy: Use item frames if you need specific decorations without randomness. In building, use to add character to homes, castles, and museums. Place paintings over secret doorways to create hidden entrances. In adventure maps, paintings sometimes hint at puzzle solutions. Observe all paintings at least once to complete the 'Art Gallery' advancement."
   },
   {
     "type": 10,
@@ -78,7 +77,7 @@
     "text_type": "arrow",
     "icon": "https://hosoinu.github.io/icons/10.png",
     "category": ["overworld"],
-    "description": "Ranged projectile. Health: N/A. Damage: 1-4❤️ (depends on bow power). Technical: 20% chance to drop after hitting. Strategy: Infinity bows bypass ammo."
+    "description": "Common projectile fired from bows, crossbows, or dispensers. Damage ranges from 1-10❤️ depending on bow charge and enchantments. Arrows follow a parabolic trajectory affected by gravity and lose velocity over distance. Critical hits (when player is falling) add 50% damage. Fired arrows have a 20% chance to be recoverable after hitting a target. Various arrow types exist: regular, spectral (causes glowing), and tipped (applies potion effects). Strategy: Infinity bow enchantment provides unlimited regular arrows (requires just one in inventory). Flame enchantment sets targets on fire. For long-distance shooting, aim above target to compensate for drop (each 10 blocks requires roughly 1 block higher aim). Arrows can trigger pressure plates, buttons, and activate tripwires. In PvP, use strategic shooting to knock players off edges. Arrows stick in entities, showing shot direction and can reveal invisible players if hits connect. Incredibly versatile for ranged combat in all game stages."
   },
   {
     "type": 11,
@@ -86,7 +85,7 @@
     "text_type": "snowball",
     "icon": "https://hosoinu.github.io/icons/11.png",
     "category": ["overworld"],
-    "description": "Throwable projectile. Health: N/A. Damage: Knockback only. Technical: 16 max stack. Strategy: Use against blazes (3❤️ damage)."
+    "description": "Throwable projectile that deals knockback but usually no damage. Crafted from snow blocks or found in chests. Maximum stack size of 16, giving them inventory efficiency for a projectile. Snowballs have one special interaction: they deal 3❤️ damage to blazes due to their fire nature, making them extremely valuable in the Nether. They can knock back most mobs and players, potentially pushing them off cliffs or into hazards. Endermen will teleport when hit. Strategy: Collect early when exploring snowy biomes as a weapon against blazes when you reach the Nether. Snow golems provide infinite snowball supply for farms. Use for resource-efficient monster control by knocking them away rather than killing. In multiplayer, snowballs can interrupt other players' actions like eating or bow charging. Can be fired from dispensers for traps or mob control systems. Great for capturing attention of mobs without dealing damage when building farms."
   },
   {
     "type": 12,
@@ -94,7 +93,7 @@
     "text_type": "fireball",
     "icon": "https://hosoinu.github.io/icons/12.png",
     "category": ["nether"],
-    "description": "Ghast explosive attack. Health: N/A. Damage: 9❤️ (radius 3 blocks). Technical: Deflect with melee. Strategy: Use for Netherrack mining."
+    "description": "Large explosive projectile fired by ghasts in the Nether. Creates explosion with power comparable to TNT (blast radius approximately 3 blocks). Deals up to 9❤️ damage at direct hit, with damage decreasing with distance from explosion. Sets surrounding blocks on fire in a 4-5 block radius. Unlike TNT, can destroy blocks even in areas where mob griefing is disabled. Can be deflected back toward ghasts by hitting with any tool or weapon (even bare hands), providing a unique way to kill ghasts with their own attacks. Strategy: Listen for ghast cries to locate them before they fire. When exploring Nether, always carry fire resistance potions to mitigate fireball damage. Deflecting fireballs requires precise timing - practice this skill for Nether survival. Use ghast fireballs strategically to clear large areas of netherrack when mining. In multiplayer, be mindful of other players when deflecting fireballs to avoid friendly fire. The "Return to Sender" advancement requires killing a ghast with its own fireball."
   },
   {
     "type": 13,
@@ -102,7 +101,7 @@
     "text_type": "small_fireball",
     "icon": "https://hosoinu.github.io/icons/13.png",
     "category": ["nether"],
-    "description": "Blaze projectile. Health: N/A. Damage: 5❤️ direct + 2❤️ splash. Technical: Lights blocks on fire. Strategy: Snowball counterattack."
+    "description": "Smaller fire projectile shot by blazes in rapid succession (typically 3 at a time). Deals 5❤️ on direct hit plus sets the target on fire for 5 seconds (causing additional 2❤️ damage over time). Has a much smaller explosion radius than ghast fireballs and won't destroy blocks. Travels in a straight line without gravity effect, making them more predictable to dodge than arrows. Cannot be deflected like ghast fireballs. Strategy: Unlike other projectiles, these can be blocked completely with a shield. Use snow golems against blazes, as snowballs will interrupt blaze attacks and deal extra damage. Fire resistance potions completely nullify both impact and fire damage. When fighting multiple blazes, prioritize taking cover rather than attacking, as overlapping fireballs can quickly overwhelm players. Water sources extinguish fires caused by these projectiles, so bringing water buckets to the Nether is valuable despite water evaporating when placed."
   },
   {
     "type": 14,
@@ -110,7 +109,7 @@
     "text_type": "ender_pearl",
     "icon": "https://hosoinu.github.io/icons/14.png",
     "category": ["overworld"],
-    "description": "Teleportation item. Health: N/A. Damage: 2.5❤️ on use. Technical: 5% endermite spawn chance. Strategy: Use for parkour shortcuts."
+    "description": "Teleportation projectile that transports the thrower to its landing location. Deals 2.5❤️ fall damage to the user upon teleportation (regardless of actual height). Has a 10-second cooldown between uses, indicated by a white overlay on the hotbar. Maximum throwing range is approximately 30-40 blocks. Each teleportation has a 5% chance to spawn an endermite at the destination. Pearls can teleport players through 1-block gaps and fences. Strategy: Essential tool for endgame mobility and exploration. Use for quick escapes in combat situations or to reach high locations without building. Combine with Feather Falling boots to reduce teleportation damage. In the End, always keep pearls ready to save yourself from falling into the void. For precise teleportation, use crosshairs to aim exact landing spot. In speedrunning, critical for fast travel and skipping certain challenges. Water or hay bales at landing spots don't reduce the teleport damage. Can teleport through some barriers that would normally block movement."
   },
   {
     "type": 15,
@@ -118,7 +117,7 @@
     "text_type": "eye_of_ender_signal",
     "icon": "https://hosoinu.github.io/icons/15.png",
     "category": ["overworld"],
-    "description": "Stronghold locator. Health: N/A. Damage: N/A. Technical: 20% break chance per use. Strategy: Craft 12 for portal activation."
+    "description": "Mystical guide entity that leads players to the nearest stronghold. Crafted using an ender pearl and blaze powder. When thrown (right-click), the eye will float in the direction of the nearest stronghold for about 2-3 seconds before dropping as an item. Each throw has a 20% chance for the eye to shatter permanently. Eyes will travel through blocks, making them usable from inside caves or underwater. Maximum tracking distance is approximately 1,500 blocks, but strongholds typically generate much closer. Strategy: To find strongholds efficiently, throw an eye, travel 100+ blocks in the indicated direction, then throw again to triangulate. About 12 eyes are needed to activate the End portal (though some frames may already contain eyes). Find high ground before throwing for better visibility of the eye's path. Mark coordinates when the eye starts traveling straight down - this indicates you're directly above a stronghold. Eyes thrown in the End or Nether have no target and will drop immediately. One of the most important progression items for reaching the endgame."
   },
   {
     "type": 16,
@@ -126,7 +125,7 @@
     "text_type": "potion",
     "icon": "https://hosoinu.github.io/icons/16.png",
     "category": ["overworld"],
-    "description": "Throwable effect container. Health: N/A. Damage: Varies (e.g., Harming: 6❤️). Technical: 4-block radius. Strategy: Use Lingering for traps."
+    "description": "Throwable potion that applies effects in an area upon impact. Created by combining regular potions with gunpowder at a brewing stand. Effects apply to all entities within a 4-block radius from the point of impact, with diminishing strength based on distance. Duration is 75% of the drinkable version. Maximum throwing range is approximately 30 blocks. Creates distinctive glass-breaking sound and colorful particle effects when it lands. Strategy: Splash potions of Healing damage undead mobs like zombies and skeletons (Healing II deals 6❤️). Harmful potions are 50% more effective against most mobs than players. For PvP, use Slowness or Weakness to cripple opponents. In team play, use beneficial effects like Strength, Speed, and Healing as group buffs. Can be dispensed with dispensers for traps or automatic brewing systems. Carry Splash potions of Fire Resistance for emergency Nether situations. For mass mob farming, throw Harming II at concentrated groups for efficient kills. Some effects have interesting strategic uses - Water Breathing splashed on fish prevents them from suffocating on land."
   },
   {
     "type": 17,
@@ -134,7 +133,7 @@
     "text_type": "xp_bottle",
     "icon": "https://hosoinu.github.io/icons/17.png",
     "category": ["overworld"],
-    "description": "XP source. Health: N/A. Damage: N/A. Technical: Grants 3-11 XP. Strategy: Farm from cleric villagers."
+    "description": "Throwable item that releases experience orbs when it breaks. Creates 3-11 experience points per bottle (randomized). Produces distinctive magical sound and green particle effects upon breaking. Unlike normal XP orbs, these experience points can't be lost upon death. Can be thrown approximately 30 blocks. Often found in dungeons, woodland mansions, and buried treasure, but most commonly obtained through trading with cleric villagers (apprentice level). Strategy: Save these for emergency enchanting or anvil work when away from XP farms. Expert clerics sell bottles for 3 emeralds each, making them renewable. Use for precise control over enchantment levels, especially when targeting specific level thresholds. In multiplayer, can be given to other players as a form of XP sharing. Throw at a mending-enchanted tool to repair it directly. Use with dispensers to create automatic XP distribution systems for group enchanting. For technical players, can be used for testing XP mechanics and farm efficiency calculations."
   },
   {
     "type": 18,
@@ -142,7 +141,7 @@
     "text_type": "item_frame",
     "icon": "https://hosoinu.github.io/icons/18.png",
     "category": ["overworld"],
-    "description": "Item display. Health: N/A. Damage: N/A. Technical: Rotate with right-click. Drops: Item + frame (100%)."
+    "description": "Decorative entity that displays items on walls, floors, or ceilings. Crafted with 8 sticks and 1 leather. Can hold any item in the game, displaying it visually. Items can be rotated in 45-degree increments (8 positions) by right-clicking. When broken, drops both the frame and the displayed item. Can be placed on nearly any solid surface. In Java Edition, emits light level 1 when displaying glowing items like glowstone. Strategy: Essential for organization in storage rooms - label chests with their contents. Use with maps for creating large custom wall maps spanning multiple frames. Redstone component - outputs signal strength based on item rotation (0-7). Use with compasses or clocks for functional wall displays that show time or direction. In sorting systems, can display sample items for visual reference. Glow item frames (crafted with glow ink sac) illuminate displayed items even in darkness. Multiple item frames in a pattern can create decorative designs or pixel art. Maps in item frames always display their full area regardless of zoom level, making them perfect for navigation centers."
   },
   {
     "type": 19,
@@ -150,7 +149,7 @@
     "text_type": "wither_skull",
     "icon": "https://hosoinu.github.io/icons/19.png",
     "category": ["nether"],
-    "description": "Wither projectile. Health: N/A. Damage: 8❤️ explosion. Technical: Blue skulls bypass armor. Strategy: Deflect with cobblestone."
+    "description": "Destructive projectile fired by the Wither boss. Creates powerful explosion on impact (blast strength comparable to TNT) dealing 8❤️ direct damage. Applies Wither effect (darkness + damage over time) for 10 seconds to entities hit directly. Destroys most blocks with blast resistance under 20, making them more destructive than creepers. Two variants: black skulls (normal) and blue skulls (charged). The blue skulls are especially dangerous as they destroy nearly any block (except bedrock, end portal frames, etc.) and bypass armor protection. Strategy: Hide behind solid cover when fighting Withers to avoid projectiles. Skulls can be deflected, but this is extremely difficult due to their speed. Milk buckets clear the Wither effect if hit. The Wither will begin firing these rapidly after reaching half health, making the second phase much more dangerous. In custom maps, sometimes used for controlled destruction of areas. Withers can use these to escape most containment systems, so advanced wither farms need careful design. The explosions do not harm the Wither itself, making them useful for boss-based mining operations."
   },
   {
     "type": 20,
@@ -158,17 +157,15 @@
     "text_type": "tnt",
     "icon": "https://hosoinu.github.io/icons/20.png",
     "category": ["overworld"],
-    "description": "Activated explosive. Health: N/A. Damage: 65❤️ (radius 7 blocks). Technical: 4-second fuse. Strategy: Use for quarry mining."
+    "description": "Explosive entity created when TNT blocks are activated. Features a 4-second fuse with characteristic hissing sound and flashing texture. Creates explosion with 4-block radius (7-block diameter), destroying blocks with blast resistance under 4 and damaging entities for up to 65❤️ at the epicenter. Unlike creepers, always drops all blocks it destroys (100% drop rate). Can be pushed by water or pistons while active. Can be ignited by: fire, redstone signals, explosions, flaming arrows, fire charges, and lava. Strategy: Essential for efficient mining - blast mining creates large chambers quickly. Create TNT cannons for launching TNT over distances using precisely timed redstone. In the End, safe for crystal destruction from a distance. Use in mob farms for mass killing. Fire resistance doesn't protect against explosion damage, only from potential fire aftermath. When mining, place TNT every 4-5 blocks for optimal ore exposure. TNT can be used underwater with no reduction in destructive power. For controlled blasts, surround target area with high blast-resistance blocks like obsidian. TNT minecarts create more powerful explosions than standard TNT."
   },
-]
-  ,
   {
     "type": 21,
     "name": "Falling Block",
     "text_type": "falling_block",
     "icon": "https://hosoinu.github.io/icons/21.png",
     "category": ["overworld"],
-    "description": "Gravity-affected block. Health: N/A. Damage: Crushing (varies by block). Technical: Converts to item on landing. Strategy: Use for sand/gravel traps."
+    "description": "Technical entity representing blocks affected by gravity. Appears when sand, gravel, concrete powder, anvils, dragon eggs, or other gravity-affected blocks lose support. Falls at a speed of 0.4 blocks per tick (8 blocks per second). Transforms back into a placeable block upon landing on a solid surface. If it falls onto a non-solid block (torch, slab, etc.), it converts to a collectible item. Can damage entities when falling from sufficient height. Anvils deal the most damage (up to 20❤️ from maximum height). Strategy: Create player traps by supporting sand/gravel with torches that can be broken. Use for automatic concrete makers (concrete powder solidifies when falling into water). Design mob crushers using falling anvils triggered by redstone. In adventure maps, create collapsing floors with concealed redstone. Sand/gravel suffocation traps can be effective against hostile mobs. For builders, falling block mechanics allow for creating natural-looking collapsed areas and cave-ins. Can be generated with custom block data using commands for map creation. Be cautious when mining upward in caves, as disturbing gravity blocks can cause suffocation."
   },
   {
     "type": 22,
@@ -176,7 +173,7 @@
     "text_type": "fireworks_rocket",
     "icon": "https://hosoinu.github.io/icons/22.png",
     "category": ["overworld"],
-    "description": "Elytra booster. Health: N/A. Damage: N/A. Technical: Duration = (gunpowder +1)s. Strategy: Use 3x gunpowder for max boost."
+    "description": "Craftable projectile that explodes into colorful patterns and boosts elytra flight. Fireworks have variable flight duration based on the amount of gunpowder used in crafting (1-3 gunpowder = 1-3 seconds of flight). When used with elytra, they provide a significant speed boost that scales with duration. Adding firework stars creates explosion effects with customizable colors, shapes (small ball, large ball, star, burst, creeper), and optional effects (twinkle, trail). Damage: Fireworks with explosion effects deal 2-7❤️ damage to entities near the explosion. Technical: Right-click to launch or use in crossbows for explosive ammunition. Strategy: For elytra flying, 3x gunpowder rockets provide the best distance-to-inventory-space ratio. Keep dedicated shulker boxes of rockets for long journeys. For PvP, loaded crossbows with fireworks deal significant damage. In creative projects, use fireworks for decorative launches or timed displays with delays. Warning: Using fireworks in tight spaces with elytra can cause crash damage."
   },
   {
     "type": 23,
@@ -184,7 +181,7 @@
     "text_type": "husk",
     "icon": "https://hosoinu.github.io/icons/23.png",
     "category": ["overworld"],
-    "description": "Desert zombie. Health: 20 HP (10❤️). Damage: Hunger effect (0:30). Drops: Rotten flesh (0-2), sand (rare). Strategy: Avoid in early-game."
+    "description": "Desert variant of zombies that spawn exclusively in desert biomes when light level is 0. Health: 20 HP (10❤️). Attack: Melee (2❤️) plus inflicts Hunger effect (30 seconds), which can starve players in higher difficulties. Visually distinct with withered, sandy appearance and produces distinctive sandy sounds. Unlike regular zombies, husks don't burn in sunlight, making desert daytime dangerous. When drowned in water, transforms into normal zombies rather than drowned. Drops: Rotten flesh (0-2), iron ingots (rarely), and occasionally sand blocks, carrots, or potatoes. Strategy: Particularly dangerous during early game when food may be scarce. Prioritize killing over regular zombies due to the hunger effect. Keep distance and use ranged weapons when possible. Armor with Projectile Protection helps against converted husks with bows. Can be used in zombie conversion farms for guaranteed normal zombies (versus drowned). Desert pyramids provide good shelter from husk attacks. The hunger effect can be countered with milk buckets or by maintaining high saturation with golden carrots or steak."
   },
   {
     "type": 24,
@@ -192,7 +189,7 @@
     "text_type": "spectral_arrow",
     "icon": "https://hosoinu.github.io/icons/24.png",
     "category": ["overworld"],
-    "description": "Glowing projectile. Health: N/A. Damage: 1-4❤️ + 10s glow. Technical: Crafted with glowstone. Strategy: Track hidden mobs."
+    "description": "Special arrow type that causes hit targets to glow with an outline visible through blocks. Crafted with 4 glowstone dust surrounding a regular arrow. Deals same base damage as normal arrows (1-10❤️ depending on bow charge). Applies Glowing effect for 10 seconds, outlining the target with a bright yellow silhouette that can be seen through walls, useful for tracking. Unlike tipped arrows, cannot be obtained from skeleton kills. Strategy: Invaluable for PvP to track opponents trying to hide or escape. Use in dark caves to keep track of dangerous mobs. Particularly effective against Endermen, as the glow persists even when they teleport. In team games, use to mark targets for allies. For hunting fast mobs like foxes or rabbits, the glow effect makes them easier to follow. Combine with Flame enchantment to add fire damage while maintaining tracking capability. The glowing effect doesn't work through dimensions, and has no effect on already invisible entities. Less expensive than most tipped arrows, making them economical for everyday use. Particularly effective against Warden since it allows tracking without triggering further sonic booms."
   },
   {
     "type": 25,
@@ -200,7 +197,7 @@
     "text_type": "shulker_bullet",
     "icon": "https://hosoinu.github.io/icons/25.png",
     "category": ["end"],
-    "description": "Shulker projectile. Health: N/A. Damage: 4❤️ + Levitation (10s). Technical: Destroy with melee. Strategy: Use Slow Falling potions."
+    "description": "Homing projectile fired by shulkers in End cities. Deals 4❤️ direct damage and applies Levitation effect (level IV) for 10 seconds. The levitation causes players to float upward uncontrollably, potentially leading to fall damage when the effect ends. Bullets follow a curved path and can navigate around obstacles to reach targets. They have limited tracking - sharp turns or sufficient distance can cause them to lose their target. Can be destroyed by hitting them with any tool or weapon, or by placing blocks in their path. Strategy: Carry Slow Falling potions when exploring End cities to prevent levitation-related fall damage. Use shields to block bullets completely. When hit, try to position yourself under a ceiling to prevent rising too high. Be especially careful near the outer edges of End cities where falling could mean death in the void. Water can be placed in strategic locations to safely descend after levitation. Fast movement in zigzag patterns can help avoid the slow-moving bullets. In PvP End battles, force opponents into open areas where levitation is more dangerous. Chorus fruit provides emergency teleportation if levitated into dangerous positions."
   },
   {
     "type": 26,
@@ -208,15 +205,15 @@
     "text_type": "dragon_fireball",
     "icon": "https://hosoinu.github.io/icons/26.png",
     "category": ["end"],
-    "description": "Dragon explosive. Health: N/A. Damage: 12❤️ + lingering cloud. Technical: Breaks most blocks. Strategy: Hide behind obsidian."
+    "description": "Purple projectile fired by the Ender Dragon during its strafing runs. Unlike other explosives, deals no direct damage or block destruction upon impact. Instead, creates a lingering cloud of dragon's breath that lasts approximately 30 seconds. This cloud deals 3❤️ per second to entities inside it. The breath cloud bypasses armor protection and cannot be blocked with shields. Multiple overlapping clouds can stack damage. When collected with glass bottles, creates Dragon's Breath item used for crafting lingering potions. Strategy: Immediately move away from impact areas to avoid damage over time. Unlike the Wither, these projectiles cannot destroy blocks, so hiding behind structures is effective. Recognizable by distinct purple color and particles. Fire resistance potions do NOT protect against dragon's breath damage. The clouds are particularly dangerous during the dragon fight as they can restrict movement in critical moments. In multiplayer dragon fights, warn teammates about breath clouds as they may be focused on the dragon. End crystals are immune to breath damage, so crystal-breaking operations can continue through clouds if necessary. When collecting dragon's breath, wait until the dragon is in perching phase for safety."
   },
-  {
+    {
     "type": 27,
     "name": "Zombie Villager",
     "text_type": "zombie_villager",
     "icon": "https://hosoinu.github.io/icons/27.png",
     "category": ["overworld"],
-    "description": "Curable zombie. Health: 20 HP (10❤️). Damage: 2❤️. Technical: Cure with Weakness + Golden Apple. Strategy: Discount trading source."
+    "description": "Infected villager that retains profession clothing but behaves like a zombie. Health: 20 HP (10❤️). Attack: Melee (2❤️). Can be cured by splashing with Weakness potion (4:00) then feeding Golden Apple. Conversion takes 2-5 minutes depending on difficulty. During conversion, emits red particles and shakes violently. Cured villagers offer permanent trading discounts (-20 to -60% base price). Strategy: Trap in enclosed space with bed and workstation to retain profession. Use name tags to prevent despawning. In Hard difficulty, villager may die during conversion (6% chance). Essential for creating sustainable trading halls. Cured zombie villagers never change professions and have access to locked trades."
   },
   {
     "type": 28,
@@ -224,7 +221,7 @@
     "text_type": "skeleton_horse",
     "icon": "https://hosoinu.github.io/icons/28.png",
     "category": ["overworld"],
-    "description": "Undead mount. Health: 15 HP (7.5❤️). Damage: N/A. Technical: 0.75% lightning spawn chance. Strategy: Immune to drowning."
+    "description": "Undead equine that spawns during thunderstorms when lightning strikes near a regular horse (0.75-1.5% chance). Health: 15 HP (7.5❤️). Immune to drowning, fall damage, and fire. Can be equipped with armor but cannot wear horse armor. Maximum jump height of 1.5 blocks. Strategy: Valuable for underwater exploration due to infinite breath. When ridden through powder snow, causes rider to freeze slowly instead of rapidly. Does not scare when near zombies. Can be leashed but cannot breed. Drops: 0-2 bones. Unique trait: Can be summoned as trap horses during thunderstorms - 4 skeleton horses spawn with rider skeletons that despawn at daylight."
   },
   {
     "type": 29,
@@ -232,7 +229,7 @@
     "text_type": "zombie_horse",
     "icon": "https://hosoinu.github.io/icons/29.png",
     "category": ["overworld"],
-    "description": "Unridable undead. Health: 15 HP (7.5❤️). Damage: N/A. Technical: Command-only spawn. Strategy: Decoration only."
+    "description": "Unridable undead horse variant exclusive to creative mode or commands. Health: 15 HP (7.5❤️). Retains visual characteristics of normal horses but with rotting flesh texture. Immune to fire/lava damage and never despawns naturally. Strategy: Primarily used for decorative purposes in horror-themed builds. Cannot be healed or converted back to normal horses. When spawned in survival via commands, acts as permanent hostile mob that attacks nearby players (3❤️ damage). Unique sound effects include distorted horse neighs and bone rattling. Does not interact with other horse variants."
   },
   {
     "type": 30,
@@ -240,7 +237,7 @@
     "text_type": "armor_stand",
     "icon": "https://hosoinu.github.io/icons/30.png",
     "category": ["overworld"],
-    "description": "Gear display. Health: N/A. Damage: N/A. Technical: Pose with redstone. Drops: Stand + equipped items."
+    "description": "Customizable mannequin for displaying armor/weapons. Crafted from 6 sticks + stone slab. Can hold items in all armor slots + both hands. Technical: Use redstone to create poses via /data commands. Emits light (level 1) when holding glow items in Java Edition. Strategy: Create armor displays in bases using invisible stands (Invisibility potion + command). Use with banners for decorative knight statues. Redstone signal strength varies (0-13) based on pose angles. Essential for map-making - create interactive displays using /trigger commands. Glow item frames combine well for illuminated displays. Warning: Items on stands count toward mob cap in perimeter-based farms."
   },
   {
     "type": 31,
@@ -248,7 +245,7 @@
     "text_type": "donkey",
     "icon": "https://hosoinu.github.io/icons/31.png",
     "category": ["overworld"],
-    "description": "Storage mount. Health: 15-30 HP (varies). Damage: N/A. Technical: 15 inventory slots. Strategy: Breed with golden apples."
+    "description": "Storage-capable equine with 15 inventory slots. Health: 15-30 HP (varies). Speed: 7.5 blocks/sec (base). Jump strength: 0.5-1.0 blocks. Strategy: Breed using golden apples/carrots for better stats. Essential for early-game item transport before shulker boxes. Combine with chest for mobile storage. Unlike mules, can breed with horses to produce mules. Immune to zombie infections. Drops: Leather (0-2). Unique trait: Can wear horse armor but not chestplates. Slower than horses but more utilitarian. Use leads to create caravans for bulk item transportation across biomes."
   },
   {
     "type": 32,
@@ -256,7 +253,7 @@
     "text_type": "mule",
     "icon": "https://hosoinu.github.io/icons/32.png",
     "category": ["overworld"],
-    "description": "Donkey-horse hybrid. Health: 15-30 HP. Damage: N/A. Technical: 15 slots + unbreedable. Strategy: Immune to zombie infection."
+    "description": "Donkey-horse hybrid with 15 inventory slots. Health: 15-30 HP (inherits parents' stats). Speed: 7.0 blocks/sec (average). Cannot breed but inherits jump height from horse parent. Strategy: Superior pack animal combining horse speed with donkey storage. Immune to all negative status effects except levitation. Essential for nether roof travel - load with building blocks and food. Drops: Leather (0-2). Unique advantage: Inherits armor slots from horse parent. Use with speed potions for rapid item transportation. Cannot wear chestplates but can use horse armor. Best obtained by breeding speed-bred horses with storage donkeys."
   },
   {
     "type": 33,
@@ -264,7 +261,7 @@
     "text_type": "evocation_fangs",
     "icon": "https://hosoinu.github.io/icons/33.png",
     "category": ["overworld"],
-    "description": "Evoker attack. Health: N/A. Damage: 6❤️. Technical: Passes through shields. Strategy: Jump to avoid."
+    "description": "Magical attack summoned by Evokers in woodland mansions. Health: N/A. Damage: 6❤️ per fang (multiple can hit simultaneously). Technical: Spawns in circular pattern around target. Unblockable by shields - must jump to avoid. Strategy: Listen for distinct casting sound (deep "vwoom") as warning. Destroy Evokers quickly to prevent repeated summons. Water doesn't affect fangs. Particles appear 0.5s before damage - time jumps carefully. In raids, prioritize killing Evokers before other illagers. Can be used against enemies in PvP if lured into fang areas."
   },
   {
     "type": 34,
@@ -272,7 +269,7 @@
     "text_type": "evocation_illager",
     "icon": "https://hosoinu.github.io/icons/34.png",
     "category": ["overworld"],
-    "description": "Mansion spellcaster. Health: 24 HP (12❤️). Damage: Fangs (6❤️) + Vex summon. Drops: Totem of Undying (100%)."
+    "description": "Spellcasting illager wearing dark blue robes. Health: 24 HP (12❤️). Attacks: Summons fangs (6❤️) and 3 Vexes (7❤️ each). Drops: Totem of Undying (100%), emerald (0-1). Strategy: Kill quickly before Vex swarm overwhelms. Use shields against fangs, bows against Vexes. Found in woodland mansions (third floor) and raid captains. Critical threat in raids - always prioritize. Susceptible to Smite V (deals +12.5❤️). Looting III increases emerald drops. Unique behavior: Flees when low health. The totem drop makes farming essential for hardcore players."
   },
   {
     "type": 35,
@@ -280,7 +277,7 @@
     "text_type": "vex",
     "icon": "https://hosoinu.github.io/icons/35.png",
     "category": ["overworld"],
-    "description": "Evoker minion. Health: 14 HP (7❤️). Damage: Iron sword (3❤️). Technical: 2-minute lifespan. Strategy: Ignore, focus on Evoker."
+    "description": "Ghostly minions summoned by Evokers. Health: 14 HP (7❤️). Damage: Iron sword (3❤️). Technical: Phases through blocks, 2-minute lifespan. Strategy: Ignore and focus on Evoker - Vexes despawn when caster dies. Use sweeping edge swords for crowd control. Weak to Smite V (+12.5❤️ damage). Cannot open doors but fly over walls. Drops nothing. Unique trait: Glows in dark areas. In raids, they often bypass defensive walls - create roofed arenas. Water doesn't slow them but fire resistance negates burning vexes."
   },
   {
     "type": 36,
@@ -288,7 +285,7 @@
     "text_type": "vindication_illager",
     "icon": "https://hosoinu.github.io/icons/36.png",
     "category": ["overworld"],
-    "description": "Axe-wielding illager. Health: 24 HP (12❤️). Damage: 7❤️ (axe). Drops: Emerald (50%). Strategy: Use shields."
+    "description": "Axe-wielding illager in dark gray robes. Health: 24 HP (12❤️). Damage: Iron axe (7❤️, 1.5s cooldown). Drops: Emerald (50%), iron axe (8.5%). Strategy: Shield blocks all axe damage. Kite backward while attacking. Found in woodland mansions (secret rooms) and raids. Unique behavior: Attacks all villagers and iron golems on sight. Johnny variants (named with name tag) attack all mobs. Use lava buckets for crowd control in raids. Susceptible to Knockback attacks. Critical to eliminate early in raids due to high melee damage."
   },
   {
     "type": 37,
@@ -296,7 +293,7 @@
     "text_type": "illusion_illager",
     "icon": "https://hosoinu.github.io/icons/37.png",
     "category": ["overworld"],
-    "description": "Unused illager. Health: 32 HP (16❤️). Damage: Bow (2-5❤️). Technical: Command-only spawn. Strategy: No drops."
+    "description": "Unused illager mob accessible only via commands. Health: 32 HP (16❤️). Attacks: Bow (2-5❤️) with spectral arrows, creates mirror images. Technical: Can cast Invisibility (10s) and Blindness (10s). Strategy: Extremely dangerous if spawned - use milk to counter effects. Mirror images (4 clones) mimic movements but deal no damage. Susceptible to fire and lava. No natural drops. Unique trait: First seen in 2017 but never added to survival. For map makers, creates challenging boss fights when combined with summoning commands."
   },
   {
     "type": 40,
@@ -304,7 +301,7 @@
     "text_type": "commandblock_minecart",
     "icon": "https://hosoinu.github.io/icons/40.png",
     "category": ["overworld"],
-    "description": "Redstone component. Health: N/A. Damage: N/A. Technical: Requires operator access. Strategy: Automated command systems."
+    "description": "Redstone component exclusive to creative mode. Health: N/A. Technical: Executes commands when activated by activator rail. Max speed: 8 m/s. Strategy: Essential for map makers - create moving traps/events. Chain command blocks for complex sequences. Use /data command to edit NBT tags. Can teleport players, spawn mobs, or alter game rules dynamically. Warning: Requires operator permissions. Combine with tripwires for area-triggered events. Unique advantage: Maintains chunk loading when moving. Critical for adventure map storytelling and automated systems."
   },
   {
     "type": 41,
@@ -312,7 +309,7 @@
     "text_type": "boat",
     "icon": "https://hosoinu.github.io/icons/41.png",
     "category": ["overworld"],
-    "description": "Water vehicle. Health: N/A. Damage: Breaks into planks. Technical: Fishes in water. Strategy: Ice highway travel."
+    "description": "Wooden watercraft crafted from 5 planks. Health: 4 HP (2❤️). Speed: 8 m/s in water, 2.7 m/s on land. Technical: Breaks into planks + stick on collision. Strategy: Use ice highways for ultra-fast travel (70 m/s). Carry on land for quick river crossings. Fish automatically while seated (1 fish/5-45s). Can carry 2 entities (including mobs). Unique trait: Floats in lava (but burns quickly). In 1.19+, mangrove boats have unique chest storage. Essential for early-game exploration - outswim drowned and guardians. Combine with frost walker for ice path creation."
   },
   {
     "type": 42,
@@ -320,321 +317,319 @@
     "text_type": "minecart",
     "icon": "https://hosoinu.github.io/icons/42.png",
     "category": ["overworld"],
-    "description": "Rail vehicle. Health: N/A. Damage: Knockback. Technical: Speed 8m/s. Strategy: Use powered rails for boosts."
-  },
-  ,  
-  {  
-    "type": 43,  
-    "name": "Storage Minecart",  
-    "text_type": "chest_minecart",  
-    "icon": "https://hosoinu.github.io/icons/43.png",  
-    "category": ["overworld"],  
-    "description": "Minecart with inventory. Health: N/A. Damage: N/A. Technical: 27 storage slots. Strategy: Link to hoppers for automated item transport."  
-  },  
-  {  
-    "type": 44,  
-    "name": "Powered Minecart",  
-    "text_type": "furnace_minecart",  
-    "icon": "https://hosoinu.github.io/icons/44.png",  
-    "category": ["overworld"],  
-    "description": "Coal-fueled minecart. Health: N/A. Damage: N/A. Technical: Pushes other minecarts. Strategy: Use for engine-powered rail systems."  
-  },  
-  {  
-    "type": 45,  
-    "name": "Minecart with TNT",  
-    "text_type": "tnt_minecart",  
-    "icon": "https://hosoinu.github.io/icons/45.png",  
-    "category": ["overworld"],  
-    "description": "Explosive rail vehicle. Health: N/A. Damage: 65❤️ (radius 7 blocks). Technical: Detonates via activator rail. Strategy: Use for tunnel blasting."  
-  },  
-  {  
-    "type": 46,  
-    "name": "Minecart with Hopper",  
-    "text_type": "hopper_minecart",  
-    "icon": "https://hosoinu.github.io/icons/46.png",  
-    "category": ["overworld"],  
-    "description": "Item-collecting minecart. Health: N/A. Damage: N/A. Technical: Pulls items at 2.5s intervals. Strategy: Use for automated farms."  
-  },  
-  {  
-    "type": 47,  
-    "name": "Minecart with Spawner",  
-    "text_type": "spawner_minecart",  
-    "icon": "https://hosoinu.github.io/icons/47.png",  
-    "category": ["overworld"],  
-    "description": "Mobile spawner. Health: N/A. Damage: N/A. Technical: Requires spawn egg. Strategy: Decoration or custom mob farms."  
-  },  
-  {  
-    "type": 50,  
-    "name": "Creeper",  
-    "text_type": "creeper",  
-    "icon": "https://hosoinu.github.io/icons/50.png",  
-    "category": ["overworld"],  
-    "description": "Explosive mob. Health: 20 HP (10❤️). Damage: 49❤️ (point-blank). Technical: Charged by lightning. Strategy: Use cats to deter."  
-  },  
-  {  
-    "type": 51,  
-    "name": "Skeleton",  
-    "text_type": "skeleton",  
-    "icon": "https://hosoinu.github.io/icons/51.png",  
-    "category": ["overworld"],  
-    "description": "Bow-wielding undead. Health: 20 HP (10❤️). Damage: 1-4❤️ (arrow). Technical: Burns in sunlight. Strategy: Farm for bones/arrows."  
-  },  
-  {  
-    "type": 52,  
-    "name": "Spider",  
-    "text_type": "spider",  
-    "icon": "https://hosoinu.github.io/icons/52.png",  
-    "category": ["overworld"],  
-    "description": "Climbing arachnid. Health: 16 HP (8❤️). Damage: 2❤️ (melee). Technical: Spawns in darkness. Strategy: Use light to prevent spawns."  
-  },  
-  {  
-    "type": 53,  
-    "name": "Giant Zombie",  
-    "text_type": "giant",  
-    "icon": "https://hosoinu.github.io/icons/53.png",  
-    "category": ["overworld"],  
-    "description": "Unused mob. Health: 100 HP (50❤️). Damage: 26❤️ (melee). Technical: Command-only spawn. Strategy: Decorative use."  
-  },  
-  {  
-    "type": 54,  
-    "name": "Zombie",  
-    "text_type": "zombie",  
-    "icon": "https://hosoinu.github.io/icons/54.png",  
-    "category": ["overworld"],  
-    "description": "Basic undead. Health: 20 HP (10❤️). Damage: 2❤️ (melee). Technical: Converts villagers. Strategy: Farm for rotten flesh."  
-  },  
-  {  
-    "type": 55,  
-    "name": "Slime",  
-    "text_type": "slime",  
-    "icon": "https://hosoinu.github.io/icons/55.png",  
-    "category": ["overworld"],  
-    "description": "Bouncy cube. Health: Varies by size (1-16 HP). Damage: 1-4❤️. Technical: Splits when killed. Strategy: Farm slimeballs for sticky pistons."  
-  },  
-  {  
-    "type": 56,  
-    "name": "Ghast",  
-    "text_type": "ghast",  
-    "icon": "https://hosoinu.github.io/icons/56.png",  
-    "category": ["nether"],  
-    "description": "Floating Nether mob. Health: 10 HP (5❤️). Damage: 9❤️ (fireball). Technical: Deflect projectiles. Strategy: Farm ghast tears for regeneration potions."  
-  },  
-  {  
-    "type": 57,  
-    "name": "Zombie Pigman",  
-    "text_type": "zombie_pigman",  
-    "icon": "https://hosoinu.github.io/icons/57.png",  
-    "category": ["nether"],  
-    "description": "Neutral Nether mob. Health: 20 HP (10❤️). Damage: 5❤️ (sword). Technical: Aggro on hit. Strategy: Farm gold nuggets."  
-  },  
-  {  
-    "type": 58,  
-    "name": "Enderman",  
-    "text_type": "enderman",  
-    "icon": "https://hosoinu.github.io/icons/58.png",  
-    "category": ["end"],  
-    "description": "Teleporting mob. Health: 40 HP (20❤️). Damage: 6❤️ (melee). Technical: Water/rain damage. Strategy: Trap in boats for farming."  
-  },  
-  {  
-    "type": 59,  
-    "name": "Cave Spider",  
-    "text_type": "cave_spider",  
-    "icon": "https://hosoinu.github.io/icons/59.png",  
-    "category": ["overworld"],  
-    "description": "Poisonous arachnid. Health: 12 HP (6❤️). Damage: 2❤️ + Poison (0:07). Technical: Found in mineshafts. Strategy: Use milk to cure poison."  
-  },  
-  {  
-    "type": 60,  
-    "name": "Silverfish",  
-    "text_type": "silverfish",  
-    "icon": "https://hosoinu.github.io/icons/60.png",  
-    "category": ["overworld"],  
-    "description": "Infesting mob. Health: 8 HP (4❤️). Damage: 1❤️. Technical: Summons others when attacked. Strategy: Avoid infested blocks."  
-  },  
-  {  
-    "type": 61,  
-    "name": "Blaze",  
-    "text_type": "blaze",  
-    "icon": "https://hosoinu.github.io/icons/61.png",  
-    "category": ["nether"],  
-    "description": "Fire-shooting mob. Health: 20 HP (10❤️). Damage: 5❤️ (fireball). Technical: Weak to snowballs. Strategy: Farm blaze rods for brewing."  
-  },  
-  {  
-    "type": 62,  
-    "name": "Magma Cube",  
-    "text_type": "magma_cube",  
-    "icon": "https://hosoinu.github.io/icons/62.png",  
-    "category": ["nether"],  
-    "description": "Lava slime. Health: Varies by size (1-16 HP). Damage: 1-4❤️. Technical: Immune to fire. Strategy: Farm magma cream for potions."  
-  },  
-  {  
-    "type": 63,  
-    "name": "Ender Dragon",  
-    "text_type": "ender_dragon",  
-    "icon": "https://hosoinu.github.io/icons/63.png",  
-    "category": ["end", "boss"],  
-    "description": "Final boss. Health: 200 HP (100❤️). Damage: 10❤️ (charge). Technical: Healed by crystals. Strategy: Destroy crystals first."  
-  },
-  ,  
-  {  
-    "type": 64,  
-    "name": "Wither",  
-    "text_type": "wither",  
-    "icon": "https://hosoinu.github.io/icons/64.png",  
-    "category": ["nether", "boss"],  
-    "description": "Summoned boss. Health: 300 HP (150❤️). Damage: 8❤️ (skull explosion). Technical: Destroys blocks. Strategy: Fight in obsidian tunnels."  
-  },  
-  {  
-    "type": 65,  
-    "name": "Bat",  
-    "text_type": "bat",  
-    "icon": "https://hosoinu.github.io/icons/65.png",  
-    "category": ["overworld"],  
-    "description": "Passive cave mob. Health: 6 HP (3❤️). Damage: N/A. Technical: Spawns in darkness. Strategy: Indicates nearby caves."  
-  },  
-  {  
-    "type": 66,  
-    "name": "Witch",  
-    "text_type": "witch",  
-    "icon": "https://hosoinu.github.io/icons/66.png",  
-    "category": ["overworld"],  
-    "description": "Potion-throwing mob. Health: 26 HP (13❤️). Damage: Harming potions (6❤️). Technical: Drops glowstone/redstone. Strategy: Use arrows for range."  
-  },  
-  {  
-    "type": 67,  
-    "name": "Endermite",  
-    "text_type": "endermite",  
-    "icon": "https://hosoinu.github.io/icons/67.png",  
-    "category": ["end"],  
-    "description": "Tiny End pest. Health: 8 HP (4❤️). Damage: 2❤️. Technical: 2-minute lifespan. Strategy: Use to attract Endermen."  
-  },  
-  {  
-    "type": 68,  
-    "name": "Guardian",  
-    "text_type": "guardian",  
-    "icon": "https://hosoinu.github.io/icons/68.png",  
-    "category": ["overworld"],  
-    "description": "Underwater defender. Health: 30 HP (15❤️). Damage: 6❤️ (laser). Technical: Spawns in ocean monuments. Strategy: Use Depth Strider."  
-  },  
-  {  
-    "type": 69,  
-    "name": "Shulker",  
-    "text_type": "shulker",  
-    "icon": "https://hosoinu.github.io/icons/69.png",  
-    "category": ["end"],  
-    "description": "End city mob. Health: 30 HP (15❤️). Damage: 4❤️ (projectile). Technical: Teleports when hit. Strategy: Use shields to block."  
-  },  
-  {  
-    "type": 90,  
-    "name": "Pig",  
-    "text_type": "pig",  
-    "icon": "https://hosoinu.github.io/icons/90.png",  
-    "category": ["overworld"],  
-    "description": "Rideable mob. Health: 10 HP (5❤️). Damage: N/A. Technical: Saddle required. Strategy: Breed with carrots."  
-  },  
-  {  
-    "type": 91,  
-    "name": "Sheep",  
-    "text_type": "sheep",  
-    "icon": "https://hosoinu.github.io/icons/91.png",  
-    "category": ["overworld"],  
-    "description": "Wool source. Health: 8 HP (4❤️). Damage: N/A. Technical: Dyeable. Strategy: Shear for wool blocks."  
-  },  
-  {  
-    "type": 92,  
-    "name": "Cow",  
-    "text_type": "cow",  
-    "icon": "https://hosoinu.github.io/icons/92.png",  
-    "category": ["overworld"],  
-    "description": "Leather source. Health: 10 HP (5❤️). Damage: N/A. Technical: Milk with bucket. Strategy: Farm for bookshelves."  
-  },  
-  {  
-    "type": 93,  
-    "name": "Chicken",  
-    "text_type": "chicken",  
-    "icon": "https://hosoinu.github.io/icons/93.png",  
-    "category": ["overworld"],  
-    "description": "Egg layer. Health: 4 HP (2❤️). Damage: N/A. Technical: Lays eggs every 5-10m. Strategy: Auto-farm with hoppers."  
-  },  
-  {  
-    "type": 94,  
-    "name": "Squid",  
-    "text_type": "squid",  
-    "icon": "https://hosoinu.github.io/icons/94.png",  
-    "category": ["overworld"],  
-    "description": "Aquatic mob. Health: 10 HP (5❤️). Damage: N/A. Technical: Drops ink sacs. Strategy: Farm for black dye."  
-  },  
-  {  
-    "type": 95,  
-    "name": "Wolf",  
-    "text_type": "wolf",  
-    "icon": "https://hosoinu.github.io/icons/95.png",  
-    "category": ["overworld"],  
-    "description": "Tamable companion. Health: 20 HP (10❤️). Damage: 3❤️ (untamed). Technical: Heal with meat. Strategy: Use against phantoms."  
-  },  
-  {  
-    "type": 96,  
-    "name": "Mooshroom",  
-    "text_type": "mooshroom",  
-    "icon": "https://hosoinu.github.io/icons/96.png",  
-    "category": ["overworld"],  
-    "description": "Mushroom cow. Health: 10 HP (5❤️). Damage: N/A. Technical: Shear for mushrooms. Strategy: Breed in mushroom biomes."  
-  },  
-  {  
-    "type": 97,  
-    "name": "Snow Golem",  
-    "text_type": "snowman",  
-    "icon": "https://hosoinu.github.io/icons/97.png",  
-    "category": ["overworld"],  
-    "description": "Utility mob. Health: 4 HP (2❤️). Damage: Snowball knockback. Technical: Melts in warm biomes. Strategy: Use for creeper defense."  
-  },  
-  {  
-    "type": 98,  
-    "name": "Ocelot",  
-    "text_type": "ocelot",  
-    "icon": "https://hosoinu.github.io/icons/98.png",  
-    "category": ["overworld"],  
-    "description": "Jungle cat. Health: 10 HP (5❤️). Damage: N/A. Technical: Scares creepers. Strategy: Tame with fish for cats."  
-  },  
-  {  
-    "type": 99,  
-    "name": "Iron Golem",  
-    "text_type": "villager_golem",  
-    "icon": "https://hosoinu.github.io/icons/99.png",  
-    "category": ["overworld"],  
-    "description": "Village protector. Health: 100 HP (50❤️). Damage: 7-21❤️. Technical: Spawns in villages. Strategy: Heal with iron ingots."  
-  },  
-  {  
-    "type": 100,  
-    "name": "Horse",  
-    "text_type": "horse",  
-    "icon": "https://hosoinu.github.io/icons/100.png",  
-    "category": ["overworld"],  
-    "description": "Rideable mob. Health: 15-30 HP (varies). Damage: N/A. Technical: Speed varies by breed. Strategy: Use for fast travel."  
-  },  
-  {  
-    "type": 101,  
-    "name": "Rabbit",  
-    "text_type": "rabbit",  
-    "icon": "https://hosoinu.github.io/icons/101.png",  
-    "category": ["overworld"],  
-    "description": "Fast hopper. Health: 3 HP (1.5❤️). Damage: N/A. Technical: Drops rabbit’s foot (10%). Strategy: Farm for jump boost potions."  
-  },  
-  {  
-    "type": 102,  
-    "name": "Polar Bear",  
-    "text_type": "polar_bear",  
-    "icon": "https://hosoinu.github.io/icons/102.png",  
-    "category": ["overworld"],  
-    "description": "Icy biome mob. Health: 30 HP (15❤️). Damage: 6❤️ (if provoked). Technical: Protects cubs. Strategy: Avoid during early game."  
+    "description": "Basic rail vehicle crafted from 5 iron ingots. Health: 4 HP (2❤️). Speed: 8 m/s (max with powered rails). Technical: Pushes entities on collision (1❤️ damage at high speed). Strategy: Create rollercoasters using activator rails for boosts. Use detector rails to trigger redstone signals. Essential for item transportation systems - chain with hopper minecarts. Unique bug: Can phase through blocks at high speeds. Warning: Subject to mob attacks - light rail networks thoroughly. Combine with furnace minecarts for engine-powered systems (pre-1.5 mechanic)."
   },  
     {
+    "type": 43,
+    "name": "Storage Minecart",
+    "text_type": "chest_minecart",
+    "icon": "https://hosoinu.github.io/icons/43.png",
+    "category": ["overworld"],
+    "description": "Minecart with 27-slot storage. Health: N/A. Technical: Links to hoppers for automated loading/unloading. Speed: 8 m/s. Strategy: Create mobile storage for mining expeditions. Use detector rails to trigger sorting systems. Place in nether roof tunnels for bulk item transport. Warning: Contents drop if destroyed. Combine with furnace minecarts for push/pull systems. Unique advantage: Immune to lava/fire damage when on rails."
+  },
+  {
+    "type": 44,
+    "name": "Powered Minecart",
+    "text_type": "furnace_minecart",
+    "icon": "https://hosoinu.github.io/icons/44.png",
+    "category": ["overworld"],
+    "description": "Coal-fueled engine minecart. Health: N/A. Speed: 4 m/s (boosted). Technical: Pushes up to 4 carts. Fuel duration: 3 minutes/coal. Strategy: Use for early-game rail systems before powered rails. Load with lava buckets for extended fuel. Create chain reactions by linking multiple engines. Obsolete in modern redstone systems but nostalgic. Unique trait: Can smelt ores while moving (removed in 1.5). Still useful for themed builds or challenge worlds."
+  },
+  {
+    "type": 45,
+    "name": "Minecart with TNT",
+    "text_type": "tnt_minecart",
+    "icon": "https://hosoinu.github.io/icons/45.png",
+    "category": ["overworld"],
+    "description": "Mobile explosive activated by activator rails. Health: N/A. Damage: 65❤️ (7-block radius). Technical: Detonates 0.5s after activation. Strategy: Build TNT cannons for long-range destruction. Use in perimeter digging machines. Chain explosions by spacing activator rails. Warning: Can destroy tracks and surrounding redstone. Unique advantage: Explodes when falling onto activator rails - create vertical bomb drops."
+  },
+  {
+    "type": 46,
+    "name": "Minecart with Hopper",
+    "text_type": "hopper_minecart",
+    "icon": "https://hosoinu.github.io/icons/46.png",
+    "category": ["overworld"],
+    "description": "Item-collecting rail vehicle. Health: N/A. Technical: Pulls items from above containers at 2.5s intervals. Strategy: Essential for automated farms - run beneath mob grinders. Use detector rails to disable collection when full. Combine with sorting systems at storage hubs. Unique trait: Can pick up items through 1-block thick floors. Suspend on elevated tracks above farmland for crop collection."
+  },
+  {
+    "type": 47,
+    "name": "Minecart with Spawner",
+    "text_type": "spawner_minecart",
+    "icon": "https://hosoinu.github.io/icons/47.png",
+    "category": ["overworld"],
+    "description": "Mobile monster spawner (creative only). Health: N/A. Technical: Requires spawn egg to function. Strategy: Create moving mob displays for adventure maps. Use command blocks to change spawn eggs dynamically. Warning: Does not work in survival without cheats. Unique advantage: Spawner persists through chunk reloads when moving. Combine with /tp commands for teleporting mob armies."
+  },
+  {
+    "type": 50,
+    "name": "Creeper",
+    "text_type": "creeper",
+    "icon": "https://hosoinu.github.io/icons/50.png",
+    "category": ["overworld"],
+    "description": "Iconic explosive mob. Health: 20 HP (10❤️). Damage: 49❤️ at point-blank (scales with proximity). Technical: 1.5s fuse after flashing. Charged variant (lightning strike) deals 97❤️. Strategy: Use cats to scare them away. Shield blocks 100% explosion damage. Farm for gunpowder (0-2 drops). Unique trait: Only mob that drops music discs (when killed by skeleton). Critical for TNT production - build charged creeper farms near lightning rods."
+  },
+  {
+    "type": 51,
+    "name": "Skeleton",
+    "text_type": "skeleton",
+    "icon": "https://hosoinu.github.io/icons/51.png",
+    "category": ["overworld"],
+    "description": "Bow-wielding undead. Health: 20 HP (10❤️). Damage: 1-4❤️ (arrow). Technical: Burns in sunlight unless sheltered. Strategy: Farm for bones (0-2) and bows (8.5%). Convert to strays in powder snow for tipped arrows. Susceptible to Smite V (+12.5❤️). Unique AI: Retreats when low health. Use as archery trainers - their shooting patterns help practice dodging."
+  },
+  {
+    "type": 52,
+    "name": "Spider",
+    "text_type": "spider",
+    "icon": "https://hosoinu.github.io/icons/52.png",
+    "category": ["overworld"],
+    "description": "Wall-climbing arachnid. Health: 16 HP (8❤️). Damage: 2❤️ (melee). Technical: Jumps 3 blocks high. Strategy: Place carpets on fences to block climbing. Farm for string (0-2) and spider eyes (33%). Susceptible to Bane of Arthropods V. Unique trait: Spawns with status effects in hard mode (Speed/Invisibility). Use water streams in farms to negate climbing ability."
+  },
+  {
+    "type": 53,
+    "name": "Giant Zombie",
+    "text_type": "giant",
+    "icon": "https://hosoinu.github.io/icons/53.png",
+    "category": ["overworld"],
+    "description": "Unused 12-block tall zombie. Health: 100 HP (50❤️). Damage: 26❤️ (melee). Technical: Command-only spawn. Strategy: Create boss fights in custom maps. Immune to sunlight but slow-moving. Drops: Rotten flesh (0-2). Unique trait: Can wear armor but lacks AI. Use /data commands to equip diamond gear for epic battles."
+  },
+  {
+    "type": 54,
+    "name": "Zombie",
+    "text_type": "zombie",
+    "icon": "https://hosoinu.github.io/icons/54.png",
+    "category": ["overworld"],
+    "description": "Basic undead mob. Health: 20 HP (10❤️). Damage: 2❤️ (melee). Technical: Burns in sunlight, converts villagers. Strategy: Farm for rotten flesh (0-2) and iron (rare). Use in zombie->drowneds farms for tridents. Susceptible to Smite V. Unique behavior: Breaks wooden doors in hard difficulty. Critical for early-game XP farms - trap in 2-block high spaces."
+  },
+  {
+    "type": 55,
+    "name": "Slime",
+    "text_type": "slime",
+    "icon": "https://hosoinu.github.io/icons/55.png",
+    "category": ["overworld"],
+    "description": "Bouncy cube mob. Health: Varies by size (1-16 HP). Damage: 1-4❤️. Technical: Splits into smaller slimes when killed. Strategy: Farm in swamp biomes (full moon) for slimeballs. Use iron golems in farms for automatic killing. Susceptible to Knockback. Unique trait: Only spawns in specific chunk coordinates (slime chunks). Essential for sticky piston and lead crafting."
+  },
+  {
+    "type": 56,
+    "name": "Ghast",
+    "text_type": "ghast",
+    "icon": "https://hosoinu.github.io/icons/56.png",
+    "category": ["nether"],
+    "description": "Floating Nether mob. Health: 10 HP (5❤️). Damage: Fireball (9❤️). Technical: Cries before shooting. Strategy: Deflect fireballs with precise timing. Farm for ghast tears (regeneration potions). Use beds for explosive kills. Unique trait: Only mob that drops tears of sadness. Critical for endgame brewing - always carry fire resistance when hunting."
+  },
+  {
+    "type": 57,
+    "name": "Zombie Pigman",
+    "text_type": "zombie_pigman",
+    "icon": "https://hosoinu.github.io/icons/57.png",
+    "category": ["nether"],
+    "description": "Neutral Nether mob (renamed to Zombified Piglin). Health: 20 HP (10❤️). Damage: 5❤️ (gold sword). Technical: Aggro swarm when attacked. Strategy: Farm for gold nuggets (0-1) using turtle eggs. Susceptible to Smite V. Unique trait: Can barter when offered gold ingots. Critical for early Nether survival - avoid accidental hits near groups."
+  },
+  {
+    "type": 58,
+    "name": "Enderman",
+    "text_type": "enderman",
+    "icon": "https://hosoinu.github.io/icons/58.png",
+    "category": ["end"],
+    "description": "Teleporting neutral mob. Health: 40 HP (20❤️). Damage: 6❤️ (melee). Technical: Hates water/rain. Strategy: Wear pumpkin to avoid aggro. Farm for ender pearls (50%) using endermites. Use boats to trap them. Unique trait: Moves blocks (grass, sand, etc.). Essential for endgame travel - collect 12+ pearls for stronghold hunting."
+  },
+  {
+    "type": 59,
+    "name": "Cave Spider",
+    "text_type": "cave_spider",
+    "icon": "https://hosoinu.github.io/icons/59.png",
+    "category": ["overworld"],
+    "description": "Poisonous spider variant. Health: 12 HP (6❤️). Damage: 2❤️ + Poison (0:07). Technical: Spawns from monster eggs in mineshafts. Strategy: Use milk to counter poison. Farm for spider eyes (33%). Susceptible to Bane of Arthropods V. Unique trait: Fits through 0.5-block gaps. Critical threat in early mining - light up mineshafts thoroughly."
+  },
+  {
+    "type": 60,
+    "name": "Silverfish",
+    "text_type": "silverfish",
+    "icon": "https://hosoinu.github.io/icons/60.png",
+    "category": ["overworld"],
+    "description": "Swarm mob hiding in monster eggs. Health: 8 HP (4❤️). Damage: 1❤️. Technical: Summons others when attacked. Strategy: Mine infested blocks from afar. Use silk touch to collect eggs. No valuable drops. Unique trait: Can merge with stone bricks. Annoying but harmless with proper armor. Clear strongholds carefully to prevent swarms."
+  },
+  {
+    "type": 61,
+    "name": "Blaze",
+    "text_type": "blaze",
+    "icon": "https://hosoinu.github.io/icons/61.png",
+    "category": ["nether"],
+    "description": "Nether fortress mob. Health: 20 HP (10❤️). Damage: Fireball (5❤️). Technical: Spawns near spawners. Strategy: Use snowballs for 3❤️ damage. Farm for blaze rods (0-1). Susceptible to Projectile Protection. Unique trait: Floats and shoots 3-fireball bursts. Critical for brewing and End access - always locate fortress before fighting dragon."
+  },
+  {
+    "type": 62,
+    "name": "Magma Cube",
+    "text_type": "magma_cube",
+    "icon": "https://hosoinu.github.io/icons/62.png",
+    "category": ["nether"],
+    "description": "Lava-based slime variant. Health: Varies by size (1-16 HP). Damage: 1-4❤️. Technical: Immune to fire/lava. Strategy: Farm for magma cream (0-1). Use in bastion gold farms. Susceptible to Knockback. Unique trait: Leaves fire trail when jumping. Critical for fire resistance potions - combine with nether wart farms."
+  },
+  {
+    "type": 63,
+    "name": "Ender Dragon",
+    "text_type": "ender_dragon",
+    "icon": "https://hosoinu.github.io/icons/63.png",
+    "category": ["end", "boss"],
+    "description": "Final boss. Health: 200 HP (100❤️). Damage: Charge (10❤️), breath (3❤️/s). Technical: Healed by end crystals. Strategy: Destroy crystals first. Use beds for explosive damage during perch. Shoot dragon breath clouds with arrows. Drops: 12,000 XP + dragon egg. Unique AI: Flies in set pattern. Critical to prepare Slow Falling potions and ender pearls for fight."
+  },
+  {
+    "type": 64,
+    "name": "Wither",
+    "text_type": "wither",
+    "icon": "https://hosoinu.github.io/icons/64.png",
+    "category": ["nether", "boss"],
+    "description": "Summoned boss. Health: 300 HP (150❤️). Damage: Skull (8❤️), dash (5❤️). Technical: Destroys most blocks. Strategy: Fight underground in obsidian tunnels. Use Strength II + Smite V. Drops: Nether Star (beacons). Unique trait: Gains armor in phase 2. Critical for endgame power - always prepare regeneration potions."
+  },
+  {
+    "type": 65,
+    "name": "Bat",
+    "text_type": "bat",
+    "icon": "https://hosoinu.github.io/icons/65.png",
+    "category": ["overworld"],
+    "description": "Passive cave mob. Health: 6 HP (3❤️). Technical: Spawns in light level 0. Strategy: Indicates nearby caves. No drops. Unique trait: Hangs upside down. Decorative only - use /summon for ambiance in builds. Flies erratically when disturbed. Critical for atmosphere but no gameplay impact."
+  },
+  {
+    "type": 66,
+    "name": "Witch",
+    "text_type": "witch",
+    "icon": "https://hosoinu.github.io/icons/66.png",
+    "category": ["overworld"],
+    "description": "Potion-throwing mob. Health: 26 HP (13❤️). Damage: Harming (6❤️). Technical: Drinks potions when damaged. Strategy: Kill quickly before healing. Farm for glowstone/redstone. Susceptible to Instant Damage. Unique trait: Drops sticks (65%) and glass bottles (25%). Critical threat in raids - eliminate with ranged attacks."
+  },
+  {
+    "type": 67,
+    "name": "Endermite",
+    "text_type": "endermite",
+    "icon": "https://hosoinu.github.io/icons/67.png",
+    "category": ["end"],
+    "description": "Tiny End pest. Health: 8 HP (4❤️). Damage: 2❤️. Technical: 2-minute lifespan. Strategy: Use to attract Endermen in farms. No drops. Unique trait: Hated by Endermen. Spawns from ender pearls (5% chance). Critical for enderman XP farms - build around pearl landing pads."
+  },
+  {
+    "type": 68,
+    "name": "Guardian",
+    "text_type": "guardian",
+    "icon": "https://hosoinu.github.io/icons/68.png",
+    "category": ["overworld"],
+    "description": "Ocean monument defender. Health: 30 HP (15❤️). Damage: Laser (6❤️). Technical: Inflicts Mining Fatigue. Strategy: Use Depth Strider III + Trident. Farm for prismarine (0-2). Susceptible to Impaling V. Unique trait: Shoots through transparent blocks. Critical for sea lantern crafting - clear monuments systematically."
+  },
+  {
+    "type": 69,
+    "name": "Shulker",
+    "text_type": "shulker",
+    "icon": "https://hosoinu.github.io/icons/69.png",
+    "category": ["end"],
+    "description": "End city mob. Health: 30 HP (15❤️). Damage: Levitation (4❤️). Technical: Teleports when hit. Strategy: Use shields to block bullets. Farm for shells (50%). Susceptible to Smite V. Unique trait: Attaches to any surface. Critical for shulker box production - build safe platforms in end cities."
+  },
+  {
+    "type": 90,
+    "name": "Pig",
+    "text_type": "pig",
+    "icon": "https://hosoinu.github.io/icons/90.png",
+    "category": ["overworld"],
+    "description": "Rideable passive mob. Health: 10 HP (5❤️). Speed: 5.5 m/s (saddled). Strategy: Breed with carrots for food (1-3 porkchops). Use warped fungus on stick for steering. Unique trait: Can be struck by lightning to become zombified piglin. Critical for early-game food - build carrot auto-farms nearby."
+  },
+  {
+    "type": 91,
+    "name": "Sheep",
+    "text_type": "sheep",
+    "icon": "https://hosoinu.github.io/icons/91.png",
+    "category": ["overworld"],
+    "description": "Wool-producing mob. Health: 8 HP (4❤️). Technical: Regrows wool after shearing (1-3 days). Strategy: Dye before shearing for colored wool. Farm for mutton (1-2). Unique trait: Jeb_ rainbow sheep with name tag. Critical for bed crafting - automate shearing with dispensers."
+  },
+  {
+    "type": 92,
+    "name": "Cow",
+    "text_type": "cow",
+    "icon": "https://hosoinu.github.io/icons/92.png",
+    "category": ["overworld"],
+    "description": "Leather/milk source. Health: 10 HP (5❤️). Technical: Right-click with bucket for milk. Strategy: Breed with wheat for sustainable leather (0-2). Unique mooshroom variant in mushroom biomes. Critical for book production - pair with sugarcane farms."
+  },
+  {
+    "type": 93,
+    "name": "Chicken",
+    "text_type": "chicken",
+    "icon": "https://hosoinu.github.io/icons/93.png",
+    "category": ["overworld"],
+    "description": "Egg-laying bird. Health: 4 HP (2❤️). Technical: Lays egg every 5-10 minutes. Strategy: Build automatic farms with hoppers. Cook eggs for food or throw for chicks. Unique trait: Takes fall damage but floats slowly. Critical for cake recipes and feather collection."
+  },
+  {
+    "type": 94,
+    "name": "Squid",
+    "text_type": "squid",
+    "icon": "https://hosoinu.github.io/icons/94.png",
+    "category": ["overworld"],
+    "description": "Aquatic ink mob. Health: 10 HP (5❤️). Technical: Spawns in water (Y=46-62). Strategy: Farm for ink sacs (1-3). Glow squid variant emits light particles. Unique trait: Dies outside water after 300 ticks. Critical for black dye and book & quills."
+  },
+  {
+    "type": 95,
+    "name": "Wolf",
+    "text_type": "wolf",
+    "icon": "https://hosoinu.github.io/icons/95.png",
+    "category": ["overworld"],
+    "description": "Tamable companion. Health: 20 HP (10❤️). Damage: 3❤️ (untamed). Strategy: Heal with meat, dye collars. Attacks skeletons automatically when tamed. Unique trait: Sits when right-clicked. Critical for exploration safety - breed packs for mob defense."
+  },
+  {
+    "type": 96,
+    "name": "Mooshroom",
+    "text_type": "mooshroom",
+    "icon": "https://hosoinu.github.io/icons/96.png",
+    "category": ["overworld"],
+    "description": "Mushroom-covered cow. Health: 10 HP (5❤️). Technical: Shear for mushrooms (5 red mushrooms). Strategy: Breed in mushroom biomes for stew ingredients. Unique brown variant in flower forests. Critical for sustainable food - use bowls for mushroom stew."
+  },
+  {
+    "type": 97,
+    "name": "Snow Golem",
+    "text_type": "snowman",
+    "icon": "https://hosoinu.github.io/icons/97.png",
+    "category": ["overworld"],
+    "description": "Utility mob. Health: 4 HP (2❤️). Technical: Built with 2 snow blocks + pumpkin. Strategy: Use for creeper defense (snowball distraction). Melts in warm biomes/rain. Unique trait: Leaves snow trail. Critical for automated snow farms - trap in enclosed areas."
+  },
+  {
+    "type": 98,
+    "name": "Ocelot",
+    "text_type": "ocelot",
+    "icon": "https://hosoinu.github.io/icons/98.png",
+    "category": ["overworld"],
+    "description": "Jungle cat. Health: 10 HP (5❤️). Technical: Trusts players with raw fish. Strategy: Tame to create cats (scare creepers). Unique trait: Stalks chickens/parrots. Critical for base defense - keep near doorways to prevent phantom spawns."
+  },
+  {
+    "type": 99,
+    "name": "Iron Golem",
+    "text_type": "villager_golem",
+    "icon": "https://hosoinu.github.io/icons/99.png",
+    "category": ["overworld"],
+    "description": "Village protector. Health: 100 HP (50❤️). Damage: 7-21❤️. Technical: Spawns in villages with 10+ villagers. Strategy: Heal with iron ingots. Farm for poppies (75%). Unique trait: Throws enemies 3 blocks high. Critical for raid defense - build iron farms near villages."
+  },
+  {
+    "type": 100,
+    "name": "Horse",
+    "text_type": "horse",
+    "icon": "https://hosoinu.github.io/icons/100.png",
+    "category": ["overworld"],
+    "description": "Rideable mob. Health: 15-30 HP (breed-dependent). Speed: 4.8-14.5 blocks/sec. Strategy: Breed for speed/jump stats. Use golden apples for healing. Unique trait: 7 color/pattern variations. Critical for fast travel - keep saddles in ender chests."
+  },
+  {
+    "type": 101,
+    "name": "Rabbit",
+    "text_type": "rabbit",
+    "icon": "https://hosoinu.github.io/icons/101.png",
+    "category": ["overworld"],
+    "description": "Fast hopper. Health: 3 HP (1.5❤️). Technical: Spawns in deserts/flower forests. Strategy: Farm for rabbit's foot (10%) and hide (0-1). Killer bunny variant (rare) deals 5❤️ damage. Critical for jump boost potions - build carrot-powered farms."
+  },
+  {
+    "type": 102,
+    "name": "Polar Bear",
+    "text_type": "polar_bear",
+    "icon": "https://hosoinu.github.io/icons/102.png",
+    "category": ["overworld"],
+    "description": "Neutral icy mob. Health: 30 HP (15❤️). Damage: 6❤️ (if cubs nearby). Technical: Spawns on ice/snow. Strategy: Avoid during early exploration. Drops fish (0-2). Unique trait: Cannot be tamed. Critical for biome identification - indicates nearby ice spikes."
+  },
+  {
     "type": 103,
     "name": "Llama",
     "text_type": "llama",
     "icon": "https://hosoinu.github.io/icons/103.png",
     "category": ["overworld"],
-    "description": "Caravan mob. Health: 15-30 HP (varies). Damage: Spit (1❤️). Technical: 3-15 inventory slots (with chest). Strategy: Use for item transport in mountains."
+    "description": "Caravan mob. Health: 15-30 HP. Damage: Spit (1❤️). Technical: 3-15 inventory slots (with chest). Strategy: Use for mountain transport. Breed for strength (1-5 item slots). Unique trait: Attacks wolves automatically. Critical for mobile storage - chain llamas with leads."
   },
   {
     "type": 104,
@@ -642,7 +637,7 @@
     "text_type": "llama_spit",
     "icon": "https://hosoinu.github.io/icons/104.png",
     "category": ["overworld"],
-    "description": "Llama projectile. Health: N/A. Damage: 1❤️. Technical: 0.25s cooldown. Strategy: Avoid when angering llamas."
+    "description": "Projectile from angered llamas. Health: N/A. Damage: 1❤️. Technical: 0.25s cooldown. Strategy: Avoid when stealing from llama caravans. No drops. Unique trait: Can hit multiple targets in line. Critical to know: Does not aggro other llamas in herd."
   },
   {
     "type": 105,
@@ -650,7 +645,7 @@
     "text_type": "parrot",
     "icon": "https://hosoinu.github.io/icons/105.png",
     "category": ["overworld"],
-    "description": "Tamable bird. Health: 6 HP (3❤️). Damage: N/A. Technical: Mimics mob sounds. Strategy: Dance to music discs for taming."
+    "description": "Tamable bird. Health: 6 HP (3❤️). Technical: Mimics mob sounds. Strategy: Use as proximity alerts (hisses near mobs). Feed cookies to kill (toxic). Unique trait: Dances to music discs. Critical for jungle ambiance - breed colorful flocks in treehouses."
   },
   {
     "type": 120,
@@ -658,7 +653,7 @@
     "text_type": "villager",
     "icon": "https://hosoinu.github.io/icons/120.png",
     "category": ["overworld"],
-    "description": "Trading NPC. Health: 20 HP (10❤️). Damage: N/A. Technical: 15 professions (librarian, farmer, etc.). Strategy: Cure zombie villagers for discounts."
+    "description": "Trading NPC. Health: 20 HP (10❤️). Technical: 15 professions with unique trades. Strategy: Cure zombie villagers for discounts. Lock trades by breaking workstations. Unique trait: Restocks twice daily. Critical for enchanted gear - build trading halls with librarian cells."
   },
   {
     "type": 200,
@@ -666,6 +661,6 @@
     "text_type": "ender_crystal",
     "icon": "https://hosoinu.github.io/icons/200.png",
     "category": ["end", "boss"],
-    "description": "Dragon healer. Health: Indestructible (except attacks). Damage: Explosion (6❤️). Technical: Crafted with ghast tear + eye of ender. Strategy: Destroy with snowballs."
+    "description": "Dragon healing station. Health: Invulnerable (except attacks). Damage: Explosion (6❤️). Technical: Crafted with ghast tear + eye of ender. Strategy: Destroy with snowballs to conserve arrows. Respawn dragon by placing 4 crystals on portal. Critical for dragon fights - always carry ender pearls for crystal access."
   }
 ]
